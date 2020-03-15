@@ -1,0 +1,1001 @@
+suspect_index,incident_id,participant_gender,participant_age,participant_age_group,participant_status
+0,461105,Female,,Adult 18+,Injured
+1,478855,Male,25.0,Adult 18+,"Injured, Unharmed, Arrested"
+2,478855,Male,31.0,Adult 18+,"Unharmed, Arrested"
+3,478925,Male,33.0,Adult 18+,Killed
+4,478959,Female,47.0,Adult 18+,Killed
+5,478948,Male,,Adult 18+,"Unharmed, Arrested"
+6,478948,Male,,Adult 18+,"Unharmed, Arrested"
+7,479363,Male,15.0,Teen 12-17,"Unharmed, Arrested"
+8,479389,Male,,Adult 18+,Unharmed
+9,479561,Male,48.0,Adult 18+,"Injured, Arrested"
+10,479554,Male,,Adult 18+,Unharmed
+11,479460,Male,29.0,Adult 18+,"Unharmed, Arrested"
+12,479573,Female,24.0,Adult 18+,"Unharmed, Arrested"
+13,479580,Male,25.0,Adult 18+,"Unharmed, Arrested"
+14,479580,Male,18.0,Adult 18+,"Unharmed, Arrested"
+15,479580,Male,19.0,Adult 18+,"Unharmed, Arrested"
+16,479592,,,Adult 18+,Unharmed
+17,479592,,,Adult 18+,Unharmed
+18,479603,Male,19.0,Adult 18+,"Unharmed, Arrested"
+19,479603,Male,22.0,Adult 18+,"Unharmed, Arrested"
+20,479603,Male,23.0,Adult 18+,"Unharmed, Arrested"
+21,480327,Male,68.0,Adult 18+,Killed
+22,480344,Male,25.0,Adult 18+,"Killed, Unharmed, Arrested"
+23,480344,Male,,Adult 18+,"Unharmed, Arrested"
+24,480358,Male,20.0,Adult 18+,Killed
+25,480383,Male,41.0,Adult 18+,"Unharmed, Arrested"
+26,480401,Male,,Adult 18+,"Unharmed, Arrested"
+27,480407,,,,Unharmed
+28,480407,,,,Unharmed
+29,480443,Male,29.0,Adult 18+,"Unharmed, Arrested"
+30,481186,Male,15.0,Teen 12-17,"Unharmed, Arrested"
+31,481186,Male,17.0,Teen 12-17,"Unharmed, Arrested"
+32,481198,Male,24.0,Adult 18+,"Unharmed, Arrested"
+33,481198,Male,25.0,Adult 18+,"Unharmed, Arrested"
+34,481213,Male,17.0,Teen 12-17,"Unharmed, Arrested"
+35,481213,Male,15.0,Teen 12-17,"Unharmed, Arrested"
+36,481229,Male,25.0,Adult 18+,"Unharmed, Arrested"
+37,482771,Male,19.0,Adult 18+,"Unharmed, Arrested"
+38,482771,Male,19.0,Adult 18+,"Unharmed, Arrested"
+39,482771,Male,17.0,Teen 12-17,Injured
+40,482771,Male,,Adult 18+,Injured
+41,482801,Male,23.0,Adult 18+,"Unharmed, Arrested"
+42,482801,Male,20.0,Adult 18+,"Unharmed, Arrested"
+43,482801,Male,20.0,Adult 18+,"Unharmed, Arrested"
+44,482801,Male,18.0,Adult 18+,"Unharmed, Arrested"
+45,482856,Male,64.0,Adult 18+,Killed
+46,483737,Male,,Adult 18+,Unharmed
+47,483737,Male,,Adult 18+,Unharmed
+48,483737,Male,,Adult 18+,Unharmed
+49,483765,Male,21.0,Adult 18+,"Unharmed, Arrested"
+50,483765,Male,20.0,Adult 18+,"Unharmed, Arrested"
+51,483788,Male,29.0,Adult 18+,"Unharmed, Arrested"
+52,483835,Male,19.0,Adult 18+,"Unharmed, Arrested"
+53,483835,Male,20.0,Adult 18+,"Unharmed, Arrested"
+54,483817,Male,29.0,Adult 18+,"Injured, Arrested"
+55,483861,Male,17.0,Teen 12-17,"Unharmed, Arrested"
+56,483872,Male,43.0,Adult 18+,"Unharmed, Arrested"
+57,484268,Male,,Adult 18+,"Unharmed, Arrested"
+58,484307,Male,22.0,Adult 18+,"Unharmed, Arrested"
+59,484287,Male,22.0,Adult 18+,"Unharmed, Arrested"
+60,484317,Male,22.0,Adult 18+,"Unharmed, Arrested"
+61,484333,Male,28.0,Adult 18+,Killed
+62,484351,Male,,Adult 18+,Unharmed
+63,485746,Male,19.0,Adult 18+,"Unharmed, Arrested"
+64,485746,Male,18.0,Adult 18+,"Unharmed, Arrested"
+65,485746,Male,21.0,Adult 18+,"Unharmed, Arrested"
+66,485746,Male,20.0,Adult 18+,"Unharmed, Arrested"
+67,485746,Male,,Adult 18+,"Unharmed, Arrested"
+68,485811,Male,,,Killed
+69,485821,Male,19.0,Adult 18+,"Unharmed, Arrested"
+70,485885,Male,,Adult 18+,Unharmed
+71,485885,Male,,Adult 18+,Unharmed
+72,485885,Male,,Adult 18+,Unharmed
+73,485979,Male,31.0,Adult 18+,"Unharmed, Arrested"
+74,485979,Male,27.0,Adult 18+,"Unharmed, Arrested"
+75,984353,Male,25.0,Adult 18+,"Unharmed, Arrested"
+76,486005,Male,,Adult 18+,Unharmed
+77,486027,,29.0,Adult 18+,"Unharmed, Arrested"
+78,486109,Male,,Adult 18+,Unharmed
+79,486109,Male,,Adult 18+,Unharmed
+80,486142,Male,55.0,Adult 18+,"Killed, Unharmed, Arrested"
+81,486121,Male,,Adult 18+,Unharmed
+82,486153,Male,47.0,Adult 18+,"Injured, Unharmed, Arrested"
+83,486209,Male,19.0,Adult 18+,"Unharmed, Arrested"
+84,486209,Male,23.0,Adult 18+,"Unharmed, Arrested"
+85,486209,Male,,,"Unharmed, Arrested"
+86,486316,Male,,Adult 18+,Unharmed
+87,1007785,Male,22.0,Adult 18+,Injured
+88,486327,Male,24.0,Adult 18+,Unharmed
+89,486334,Male,,Adult 18+,Unharmed
+90,486334,Male,,Adult 18+,Unharmed
+91,873575,Male,15.0,Teen 12-17,Arrested
+92,873575,Male,21.0,Adult 18+,Arrested
+93,486611,Male,22.0,Adult 18+,"Unharmed, Arrested"
+94,486611,Male,,Adult 18+,"Unharmed, Arrested"
+95,486586,Female,,Adult 18+,Unharmed
+96,486605,Male,,Adult 18+,Unharmed
+97,486617,Male,,Adult 18+,Unharmed
+98,486623,Male,37.0,Adult 18+,"Unharmed, Arrested"
+99,486971,Male,21.0,Adult 18+,"Unharmed, Arrested"
+100,486977,Male,,Adult 18+,"Unharmed, Arrested"
+101,486977,,,Adult 18+,Unharmed
+102,486998,Male,15.0,Teen 12-17,
+103,486998,Male,17.0,Teen 12-17,
+104,487082,Male,,Adult 18+,
+105,487088,Male,,Adult 18+,Unharmed
+106,489314,Male,,Adult 18+,Unharmed
+107,487271,Male,,Adult 18+,Unharmed
+108,487271,Male,,Adult 18+,"Injured, Unharmed"
+109,487271,Male,,Adult 18+,Unharmed
+110,487271,,,Adult 18+,Unharmed
+111,487271,Male,,Adult 18+,"Injured, Unharmed"
+112,487271,Male,,Adult 18+,Injured
+113,487435,Male,,Adult 18+,Unharmed
+114,487435,Male,,Adult 18+,Unharmed
+115,487435,Male,,Adult 18+,Unharmed
+116,489581,Male,23.0,Adult 18+,Killed
+117,487659,Male,21.0,Adult 18+,"Unharmed, Arrested"
+118,487670,Male,,Adult 18+,Unharmed
+119,487670,Male,,Adult 18+,Unharmed
+120,487715,Male,18.0,Adult 18+,"Unharmed, Arrested"
+121,488992,Male,21.0,Adult 18+,"Unharmed, Arrested"
+122,488992,Male,20.0,Adult 18+,"Unharmed, Arrested"
+123,488992,Male,23.0,Adult 18+,"Unharmed, Arrested"
+124,488992,Male,19.0,Adult 18+,"Unharmed, Arrested"
+125,488992,,17.0,Teen 12-17,"Unharmed, Arrested"
+126,487833,Male,39.0,Adult 18+,"Unharmed, Arrested"
+127,487891,Male,,Adult 18+,Unharmed
+128,488134,Male,,Adult 18+,Unharmed
+129,488426,Male,20.0,Adult 18+,"Unharmed, Arrested"
+130,488505,Male,25.0,Adult 18+,Unharmed
+131,488505,Male,20.0,Adult 18+,"Unharmed, Arrested"
+132,488505,Male,20.0,Adult 18+,"Unharmed, Arrested"
+133,488505,Male,24.0,Adult 18+,"Unharmed, Arrested"
+134,488547,Male,23.0,Adult 18+,"Injured, Arrested"
+135,488970,Male,,Adult 18+,Unharmed
+136,489061,Male,,Adult 18+,Unharmed
+137,489096,Male,19.0,Adult 18+,"Unharmed, Arrested"
+138,489096,Male,,Teen 12-17,"Unharmed, Arrested"
+139,489105,Male,,Adult 18+,Unharmed
+140,489121,Male,,Adult 18+,Unharmed
+141,490048,Male,28.0,Adult 18+,"Unharmed, Arrested"
+142,490048,Female,29.0,Adult 18+,"Unharmed, Arrested"
+143,490150,Male,43.0,Adult 18+,"Unharmed, Arrested"
+144,490150,Male,32.0,Adult 18+,"Unharmed, Arrested"
+145,490226,Female,,,Injured
+146,893251,Male,22.0,Adult 18+,Injured
+147,490245,Male,22.0,Adult 18+,"Unharmed, Arrested"
+148,1023908,Male,19.0,Adult 18+,"Unharmed, Arrested"
+149,490335,Male,,,Unharmed
+150,490351,Male,35.0,Adult 18+,"Unharmed, Arrested"
+151,490750,Male,21.0,Adult 18+,"Unharmed, Arrested"
+152,490395,Female,22.0,Adult 18+,"Unharmed, Arrested"
+153,490772,Male,43.0,Adult 18+,"Unharmed, Arrested"
+154,490793,Male,,Adult 18+,Unharmed
+155,490793,Male,,Adult 18+,Unharmed
+156,490793,Male,,Adult 18+,Unharmed
+157,490793,Male,,Adult 18+,Unharmed
+158,490909,Male,29.0,Adult 18+,"Unharmed, Arrested"
+159,490922,Male,23.0,Adult 18+,Unharmed
+160,491162,Male,33.0,Adult 18+,"Unharmed, Arrested"
+161,490979,,,,Unharmed
+162,490979,,,,Unharmed
+163,491037,Male,18.0,Adult 18+,"Unharmed, Arrested"
+164,491001,Male,28.0,Adult 18+,"Unharmed, Arrested"
+165,491001,Male,32.0,Adult 18+,"Unharmed, Arrested"
+166,491046,Male,22.0,Adult 18+,"Unharmed, Arrested"
+167,491046,Male,27.0,Adult 18+,"Unharmed, Arrested"
+168,491181,Male,23.0,Adult 18+,"Unharmed, Arrested"
+169,491214,Male,,Adult 18+,Unharmed
+170,491214,Male,,,Unharmed
+171,491253,Male,27.0,Adult 18+,"Unharmed, Arrested"
+172,491265,Male,42.0,Adult 18+,Killed
+173,491281,Male,,,Unharmed
+174,491292,Male,20.0,Adult 18+,"Unharmed, Arrested"
+175,491438,,28.0,Adult 18+,"Unharmed, Arrested"
+176,491416,Male,,Adult 18+,Unharmed
+177,491416,Male,,Adult 18+,Unharmed
+178,491473,Male,21.0,Adult 18+,"Unharmed, Arrested"
+179,964573,Male,30.0,Adult 18+,Arrested
+180,491609,Male,59.0,Adult 18+,"Injured, Arrested"
+181,491630,Male,,,Unharmed
+182,491698,Male,44.0,Adult 18+,"Unharmed, Arrested"
+183,492001,Male,40.0,Adult 18+,"Unharmed, Arrested"
+184,1074613,Male,25.0,Adult 18+,"Unharmed, Arrested"
+185,491819,Male,20.0,Adult 18+,"Unharmed, Arrested"
+186,491898,Male,17.0,Teen 12-17,"Unharmed, Arrested"
+187,491898,Male,23.0,Adult 18+,"Unharmed, Arrested"
+188,491898,Male,25.0,Adult 18+,"Unharmed, Arrested"
+189,491898,Male,21.0,Adult 18+,"Unharmed, Arrested"
+190,491898,,24.0,Adult 18+,"Unharmed, Arrested"
+191,491965,Male,20.0,Adult 18+,"Unharmed, Arrested"
+192,491992,Male,35.0,Adult 18+,"Unharmed, Arrested"
+193,958032,Male,39.0,Adult 18+,Arrested
+194,492260,Male,21.0,Adult 18+,"Unharmed, Arrested"
+195,492260,Male,19.0,Adult 18+,"Unharmed, Arrested"
+196,492276,Male,72.0,Adult 18+,Killed
+197,479682,Male,22.0,Adult 18+,"Unharmed, Arrested"
+198,479727,Male,21.0,Adult 18+,"Unharmed, Arrested"
+199,479734,Male,23.0,Adult 18+,"Unharmed, Arrested"
+200,479734,Male,19.0,Adult 18+,"Unharmed, Arrested"
+201,479734,Male,20.0,Adult 18+,"Unharmed, Arrested"
+202,479747,Male,26.0,Adult 18+,"Unharmed, Arrested"
+203,479747,Female,25.0,Adult 18+,"Unharmed, Arrested"
+204,479821,Male,35.0,Adult 18+,"Unharmed, Arrested"
+205,480058,Male,33.0,Adult 18+,"Unharmed, Arrested"
+206,480366,Male,34.0,Adult 18+,Killed
+207,480415,,17.0,Teen 12-17,"Unharmed, Arrested"
+208,480415,Male,16.0,Teen 12-17,Unharmed
+209,480521,Male,20.0,Adult 18+,"Unharmed, Arrested"
+210,480521,Male,21.0,Adult 18+,"Unharmed, Arrested"
+211,480521,Male,22.0,Adult 18+,"Unharmed, Arrested"
+212,480521,Male,28.0,Adult 18+,Unharmed
+213,480521,Male,22.0,Adult 18+,"Unharmed, Arrested"
+214,480521,,20.0,Adult 18+,"Unharmed, Arrested"
+215,480521,,22.0,Adult 18+,"Unharmed, Arrested"
+216,480605,Female,33.0,Adult 18+,Killed
+217,480669,,20.0,Adult 18+,"Unharmed, Arrested"
+218,480669,Male,20.0,Adult 18+,"Unharmed, Arrested"
+219,480691,Male,31.0,Adult 18+,"Unharmed, Arrested"
+220,480700,Male,20.0,Adult 18+,"Unharmed, Arrested"
+221,480720,Male,26.0,Adult 18+,"Unharmed, Arrested"
+222,984965,Male,37.0,Adult 18+,"Unharmed, Arrested"
+223,481029,Male,21.0,Adult 18+,"Unharmed, Arrested"
+224,481029,Male,19.0,Adult 18+,"Unharmed, Arrested"
+225,1007851,Male,24.0,Adult 18+,"Unharmed, Arrested"
+226,481043,,15.0,Teen 12-17,"Unharmed, Arrested"
+227,492366,Male,29.0,Adult 18+,"Unharmed, Arrested"
+228,481419,Male,,Adult 18+,Unharmed
+229,492325,Male,56.0,Adult 18+,Killed
+230,492427,Male,,Adult 18+,Unharmed
+231,492699,Male,32.0,Adult 18+,"Unharmed, Arrested"
+232,492914,Male,27.0,Adult 18+,Killed
+233,492999,Male,51.0,Adult 18+,"Unharmed, Arrested"
+234,493842,Male,21.0,Adult 18+,"Unharmed, Arrested"
+235,493842,Male,18.0,Adult 18+,"Unharmed, Arrested"
+236,493893,Male,45.0,Adult 18+,"Unharmed, Arrested"
+237,493863,Male,15.0,Teen 12-17,"Unharmed, Arrested"
+238,493863,Male,18.0,Adult 18+,"Unharmed, Arrested"
+239,493863,Male,18.0,Adult 18+,"Unharmed, Arrested"
+240,493863,Male,18.0,Adult 18+,"Unharmed, Arrested"
+241,493863,,21.0,Adult 18+,"Unharmed, Arrested"
+242,493882,Male,29.0,Adult 18+,Killed
+243,494072,Male,25.0,Adult 18+,"Unharmed, Arrested"
+244,964582,Male,24.0,Adult 18+,Arrested
+245,964576,Male,27.0,Adult 18+,Arrested
+246,495145,Male,,,Unharmed
+247,495145,Male,,,Unharmed
+248,495323,,,,Arrested
+249,495323,,,,Arrested
+250,495323,,,,Arrested
+251,972570,Male,51.0,Adult 18+,Arrested
+252,979523,Male,21.0,Adult 18+,Arrested
+253,495566,Male,22.0,Adult 18+,Unharmed
+254,495577,Male,19.0,Adult 18+,"Unharmed, Arrested"
+255,495588,Male,,,
+256,496584,Male,38.0,Adult 18+,Killed
+257,496634,Male,22.0,Adult 18+,"Unharmed, Arrested"
+258,496668,Male,25.0,Adult 18+,"Unharmed, Arrested"
+259,496668,Male,25.0,Adult 18+,"Unharmed, Arrested"
+260,93832,Male,24.0,Adult 18+,Injured
+261,93832,Male,36.0,Adult 18+,Injured
+262,520496,Male,30.0,Adult 18+,"Unharmed, Arrested"
+263,496703,Male,22.0,Adult 18+,Unharmed
+264,496703,Male,30.0,Adult 18+,"Unharmed, Arrested"
+265,496684,,,,Unharmed
+266,496684,,,,Unharmed
+267,92383,Male,26.0,Adult 18+,Unharmed
+268,92142,Male,,Adult 18+,
+269,95261,,12.0,Teen 12-17,Unharmed
+270,92272,Male,25.0,Adult 18+,Unharmed
+271,92218,Male,35.0,Adult 18+,Unharmed
+272,104905,Male,25.0,Adult 18+,Unharmed
+273,94154,Male,19.0,Adult 18+,Unharmed
+274,104022,Male,,Adult 18+,Unharmed
+275,104022,Male,,Adult 18+,Unharmed
+276,102729,Male,26.0,Adult 18+,Unharmed
+277,102729,Male,19.0,Adult 18+,Unharmed
+278,92342,Male,24.0,Adult 18+,Unharmed
+279,92623,Male,,Adult 18+,Unharmed
+280,92614,Male,,Adult 18+,Unharmed
+281,92614,Male,,Adult 18+,Unharmed
+282,92734,Male,23.0,Adult 18+,Unharmed
+283,96019,Female,35.0,Adult 18+,Unharmed
+284,92725,,,Adult 18+,Unharmed
+285,854799,Male,31.0,Adult 18+,"Unharmed, Arrested"
+286,854799,Male,32.0,Adult 18+,"Unharmed, Arrested"
+287,92497,,,,Unharmed
+288,98134,Male,24.0,Adult 18+,Unharmed
+289,94194,Male,17.0,Teen 12-17,Unharmed
+290,94194,Male,19.0,Adult 18+,Unharmed
+291,94194,Male,19.0,Adult 18+,Unharmed
+292,94194,Male,19.0,Adult 18+,Unharmed
+293,92563,Male,13.0,Teen 12-17,Unharmed
+294,92418,Male,16.0,Teen 12-17,"Unharmed, Arrested"
+295,92418,Male,18.0,Adult 18+,"Unharmed, Arrested"
+296,92418,Male,30.0,Adult 18+,"Unharmed, Arrested"
+297,92282,Male,,Adult 18+,Unharmed
+298,92315,Male,42.0,Adult 18+,Unharmed
+299,92315,Male,51.0,Adult 18+,Unharmed
+300,92337,Male,19.0,Adult 18+,Unharmed
+301,97976,Male,41.0,Adult 18+,Unharmed
+302,92345,Male,30.0,Adult 18+,"Unharmed, Arrested"
+303,92479,Male,,,Unharmed
+304,92479,Male,,,Unharmed
+305,92479,Male,,,Unharmed
+306,92490,Male,15.0,Teen 12-17,"Unharmed, Arrested"
+307,92501,,,,Unharmed
+308,92501,,,,Unharmed
+309,92117,Male,22.0,Adult 18+,"Unharmed, Arrested"
+310,92540,Male,25.0,Adult 18+,"Unharmed, Arrested"
+311,95264,Female,32.0,Adult 18+,Unharmed
+312,92660,Male,38.0,Adult 18+,Unharmed
+313,95209,Male,,,
+314,92305,Male,,Adult 18+,Unharmed
+315,92506,Male,22.0,Adult 18+,Unharmed
+316,93194,Male,23.0,Adult 18+,Unharmed
+317,92303,Male,,Adult 18+,Unharmed
+318,92504,Male,,Adult 18+,Unharmed
+319,92487,Male,,,Unharmed
+320,93067,Male,,Adult 18+,Unharmed
+321,93067,Male,21.0,Adult 18+,Unharmed
+322,92236,Male,22.0,Adult 18+,Unharmed
+323,92189,Male,,Adult 18+,Unharmed
+324,92189,Male,,Adult 18+,Unharmed
+325,95232,Male,48.0,Adult 18+,Unharmed
+326,92736,Male,25.0,Adult 18+,"Injured, Arrested"
+327,92125,Male,,,Unharmed
+328,92744,Male,19.0,Adult 18+,Unharmed
+329,96365,Male,23.0,Teen 12-17,Unharmed
+330,92740,Male,,Adult 18+,Unharmed
+331,92740,Male,,Adult 18+,Unharmed
+332,92334,Male,,Adult 18+,Unharmed
+333,92568,Male,,Adult 18+,Unharmed
+334,95255,Male,33.0,Adult 18+,Unharmed
+335,95255,Male,35.0,Adult 18+,Unharmed
+336,92566,,,,Unharmed
+337,92174,Male,25.0,Adult 18+,Injured
+338,92174,Male,,Adult 18+,
+339,92207,Male,24.0,Adult 18+,"Unharmed, Arrested"
+340,92129,Male,24.0,Adult 18+,"Unharmed, Arrested"
+341,92266,Male,28.0,Adult 18+,
+342,92266,Male,23.0,Adult 18+,
+343,92266,Male,23.0,Adult 18+,
+344,95286,,,Adult 18+,Unharmed
+345,92469,Male,,Adult 18+,Unharmed
+346,92469,Male,,Adult 18+,Unharmed
+347,92839,Male,24.0,Adult 18+,Unharmed
+348,92839,Male,,Adult 18+,Unharmed
+349,92288,Male,,Adult 18+,Unharmed
+350,92288,Male,,Adult 18+,Unharmed
+351,92456,Male,,,Unharmed
+352,92836,Male,24.0,Adult 18+,Unharmed
+353,92836,Male,,Adult 18+,Unharmed
+354,92225,Male,,Adult 18+,Unharmed
+355,92225,Male,,Adult 18+,Unharmed
+356,95271,Male,22.0,Adult 18+,Unharmed
+357,92828,Male,30.0,Adult 18+,Unharmed
+358,92221,Male,,Adult 18+,Unharmed
+359,94637,Male,18.0,Adult 18+,Unharmed
+360,92363,Male,21.0,Adult 18+,Unharmed
+361,92602,Male,37.0,Adult 18+,Killed
+362,92602,Female,42.0,Adult 18+,Injured
+363,92156,,,,Unharmed
+364,94476,Male,,Adult 18+,Unharmed
+365,94476,Male,,Adult 18+,Unharmed
+366,92587,Male,18.0,Adult 18+,Unharmed
+367,92360,Male,30.0,Adult 18+,Unharmed
+368,92519,Male,26.0,Adult 18+,Unharmed
+369,92251,,,Adult 18+,Unharmed
+370,92512,Male,25.0,Adult 18+,Unharmed
+371,92248,Male,,Adult 18+,Unharmed
+372,165411,Male,27.0,Adult 18+,Unharmed
+373,92400,Male,63.0,Adult 18+,Unharmed
+374,93422,Male,,Adult 18+,Unharmed
+375,289294,Male,20.0,Adult 18+,"Unharmed, Arrested"
+376,93235,Male,26.0,Adult 18+,Unharmed
+377,92311,Male,33.0,Adult 18+,Unharmed
+378,92200,Male,21.0,Adult 18+,Unharmed
+379,165408,Male,,Adult 18+,Unharmed
+380,97866,Male,17.0,Teen 12-17,"Unharmed, Arrested"
+381,94486,Male,,Adult 18+,Unharmed
+382,94486,Male,,Adult 18+,Unharmed
+383,94486,Male,,Adult 18+,Unharmed
+384,92230,Male,,Adult 18+,Unharmed
+385,141405,Male,24.0,Adult 18+,Unharmed
+386,92924,Male,,Adult 18+,Unharmed
+387,92228,Male,26.0,Adult 18+,Unharmed
+388,121881,,37.0,Adult 18+,Unharmed
+389,92376,Male,23.0,Adult 18+,Unharmed
+390,92908,,,Adult 18+,Unharmed
+391,92186,Male,,Adult 18+,Unharmed
+392,92620,Male,19.0,Adult 18+,Unharmed
+393,92183,Male,,Adult 18+,Unharmed
+394,92296,Male,28.0,Adult 18+,Injured
+395,92612,Male,,Adult 18+,Unharmed
+396,92165,Male,58.0,Adult 18+,
+397,92560,Male,,Adult 18+,Unharmed
+398,92560,,,,Unharmed
+399,92560,,,,Unharmed
+400,92560,,,,Unharmed
+401,92409,Male,,,Unharmed
+402,93491,Female,35.0,Adult 18+,Unharmed
+403,94704,Male,18.0,Adult 18+,Unharmed
+404,94704,Male,17.0,Teen 12-17,Unharmed
+405,92233,Male,27.0,Adult 18+,Unharmed
+406,261045,Male,25.0,Adult 18+,"Unharmed, Arrested"
+407,150401,Male,16.0,Teen 12-17,Unharmed
+408,182940,Male,,Adult 18+,Killed
+409,92859,Male,,Teen 12-17,Unharmed
+410,92151,Male,30.0,Adult 18+,"Unharmed, Arrested"
+411,92432,Male,17.0,Teen 12-17,"Unharmed, Arrested"
+412,100729,Male,15.0,Teen 12-17,Unharmed
+413,92177,Male,36.0,Adult 18+,Unharmed
+414,95071,Male,30.0,Adult 18+,Unharmed
+415,213872,Male,,Adult 18+,Unharmed
+416,152090,Male,,Adult 18+,Unharmed
+417,92875,Male,22.0,Adult 18+,Unharmed
+418,93509,Male,20.0,Adult 18+,Unharmed
+419,93509,Male,23.0,Adult 18+,Unharmed
+420,212374,Male,,Adult 18+,Unharmed
+421,92687,Male,,Adult 18+,Unharmed
+422,92277,Male,15.0,Teen 12-17,"Unharmed, Arrested"
+423,92277,Male,17.0,Teen 12-17,"Unharmed, Arrested"
+424,92277,Male,34.0,Adult 18+,"Unharmed, Arrested"
+425,92528,Male,,Adult 18+,Unharmed
+426,92528,Male,,Adult 18+,Unharmed
+427,93694,Male,,Adult 18+,Unharmed
+428,92530,Male,,Adult 18+,Unharmed
+429,94400,Male,17.0,Teen 12-17,Unharmed
+430,94400,Male,20.0,Adult 18+,Unharmed
+431,94400,Male,20.0,Adult 18+,Unharmed
+432,95160,Male,,,
+433,92883,Male,38.0,Adult 18+,Unharmed
+434,92883,Male,33.0,Adult 18+,Killed
+435,92867,Male,,Adult 18+,Killed
+436,92867,Male,,Adult 18+,Unharmed
+437,92867,Male,,Adult 18+,Unharmed
+438,92771,Male,22.0,Adult 18+,"Unharmed, Arrested"
+439,92369,Female,23.0,Adult 18+,Unharmed
+440,92534,Male,,Adult 18+,Unharmed
+441,92534,Male,,Adult 18+,Unharmed
+442,92817,Male,21.0,Adult 18+,Unharmed
+443,92322,Male,,Adult 18+,Unharmed
+444,92793,Male,19.0,Adult 18+,Unharmed
+445,92793,Male,21.0,Adult 18+,Unharmed
+446,92796,Male,19.0,Adult 18+,Unharmed
+447,92796,Male,21.0,Adult 18+,Unharmed
+448,109172,Male,,Adult 18+,Unharmed
+449,92349,Male,,,Injured
+450,92798,Male,24.0,Adult 18+,Unharmed
+451,92605,Male,,Adult 18+,Unharmed
+452,120733,Male,20.0,Adult 18+,Unharmed
+453,92351,Male,,Adult 18+,Unharmed
+454,92803,Male,30.0,Adult 18+,Unharmed
+455,149107,Male,37.0,Adult 18+,Unharmed
+456,92639,Male,,Adult 18+,Unharmed
+457,92639,Male,,Adult 18+,Unharmed
+458,150396,Male,,Adult 18+,Unharmed
+459,92492,Male,43.0,Adult 18+,Unharmed
+460,93401,Male,,Adult 18+,Unharmed
+461,92730,Male,,Adult 18+,Unharmed
+462,93404,Male,,Adult 18+,Unharmed
+463,92366,Female,58.0,Adult 18+,Unharmed
+464,94411,Male,,Adult 18+,Unharmed
+465,92664,Male,,Adult 18+,Unharmed
+466,92904,Male,,Adult 18+,Unharmed
+467,220357,Male,,Adult 18+,Unharmed
+468,92449,Male,42.0,Adult 18+,Unharmed
+469,93311,Male,19.0,Adult 18+,Unharmed
+470,93311,Male,,Adult 18+,Unharmed
+471,93311,Male,,Adult 18+,Unharmed
+472,92712,Male,17.0,Teen 12-17,Unharmed
+473,92712,Male,16.0,Teen 12-17,Unharmed
+474,92460,Male,,Adult 18+,Unharmed
+475,93346,Male,,Adult 18+,Unharmed
+476,92391,Male,,Adult 18+,Unharmed
+477,92707,Male,,Adult 18+,Unharmed
+478,92439,Male,,Adult 18+,Unharmed
+479,92878,Male,41.0,Adult 18+,Unharmed
+480,92544,Male,20.0,Adult 18+,Unharmed
+481,92544,Male,27.0,Adult 18+,Unharmed
+482,92546,Male,24.0,Adult 18+,Unharmed
+483,92549,Male,45.0,Adult 18+,Injured
+484,95176,Male,24.0,Adult 18+,Unharmed
+485,92447,Male,,Adult 18+,Unharmed
+486,107101,Male,29.0,Adult 18+,Unharmed
+487,92463,Male,,Adult 18+,Unharmed
+488,92752,Male,17.0,Teen 12-17,Unharmed
+489,92241,Male,22.0,Adult 18+,Unharmed
+490,92554,Male,,Adult 18+,Unharmed
+491,92554,Male,,Adult 18+,Unharmed
+492,92554,Male,,Adult 18+,Unharmed
+493,92441,Male,,Adult 18+,Unharmed
+494,92645,Male,33.0,Adult 18+,"Unharmed, Arrested"
+495,92715,Male,,Adult 18+,Unharmed
+496,92319,Male,18.0,Adult 18+,Injured
+497,92319,Male,,Teen 12-17,Unharmed
+498,92259,Male,19.0,Adult 18+,Unharmed
+499,92259,Male,16.0,Teen 12-17,Unharmed
+500,92299,Male,45.0,Adult 18+,Killed
+501,92571,Male,34.0,Adult 18+,Unharmed
+502,92582,Male,20.0,Adult 18+,Unharmed
+503,97819,Male,24.0,Adult 18+,Unharmed
+504,92721,Male,,Adult 18+,Unharmed
+505,93413,Male,,Adult 18+,Unharmed
+506,93413,Male,,Adult 18+,Unharmed
+507,92704,Male,42.0,Adult 18+,Unharmed
+508,96088,Male,,Adult 18+,
+509,96088,Male,,Adult 18+,
+510,93379,Male,,Adult 18+,Unharmed
+511,94940,Male,,Adult 18+,Unharmed
+512,92842,Male,38.0,Adult 18+,Unharmed
+513,93001,Male,,Adult 18+,Unharmed
+514,93001,Male,,Adult 18+,Unharmed
+515,93001,Male,,Adult 18+,Unharmed
+516,94938,Male,,Adult 18+,Unharmed
+517,92849,Male,23.0,Adult 18+,Unharmed
+518,92628,Male,18.0,Adult 18+,Unharmed
+519,92628,Male,17.0,Teen 12-17,Unharmed
+520,96451,Male,17.0,Teen 12-17,Unharmed
+521,93070,Male,,Adult 18+,Unharmed
+522,93512,Male,,Adult 18+,Unharmed
+523,93519,Male,21.0,Adult 18+,Unharmed
+524,94427,Male,,Adult 18+,Unharmed
+525,93543,Male,,Adult 18+,Unharmed
+526,93505,Male,47.0,Adult 18+,Unharmed
+527,92718,Male,,Adult 18+,Unharmed
+528,92936,Female,20.0,Adult 18+,Unharmed
+529,92936,Female,18.0,Adult 18+,Unharmed
+530,92936,Male,23.0,Adult 18+,Unharmed
+531,92936,,22.0,Adult 18+,Unharmed
+532,94563,Male,,Adult 18+,Unharmed
+533,92445,Male,23.0,Adult 18+,Unharmed
+534,92445,,,,Unharmed
+535,92962,Male,27.0,Adult 18+,Unharmed
+536,94635,Male,31.0,Adult 18+,Unharmed
+537,94635,Male,33.0,Adult 18+,Unharmed
+538,94635,Male,34.0,Adult 18+,Unharmed
+539,94711,Male,23.0,Adult 18+,Unharmed
+540,92814,Male,37.0,Adult 18+,Unharmed
+541,210410,Male,,Adult 18+,Injured
+542,210410,Male,,Adult 18+,Injured
+543,93323,Male,35.0,Adult 18+,Unharmed
+544,93323,Female,33.0,Adult 18+,Unharmed
+545,92825,Male,,Adult 18+,Unharmed
+546,93338,Male,47.0,Adult 18+,Unharmed
+547,92597,Male,,Adult 18+,Unharmed
+548,92597,Male,,Adult 18+,Unharmed
+549,92987,Male,18.0,Adult 18+,Unharmed
+550,92811,Female,30.0,Adult 18+,Killed
+551,92811,Male,30.0,Adult 18+,Injured
+552,92994,Female,,Adult 18+,Unharmed
+553,100284,Male,25.0,Adult 18+,"Unharmed, Arrested"
+554,93393,Male,25.0,Adult 18+,Unharmed
+555,93654,Male,26.0,Adult 18+,Unharmed
+556,93654,Male,23.0,Adult 18+,Unharmed
+557,92768,,,Adult 18+,Unharmed
+558,92768,,,Adult 18+,Unharmed
+559,93678,Male,20.0,Adult 18+,Unharmed
+560,93678,Male,17.0,Teen 12-17,Unharmed
+561,92653,Male,,,Unharmed
+562,93219,Male,,Adult 18+,Killed
+563,92806,Male,27.0,Adult 18+,Unharmed
+564,103603,,,Adult 18+,Unharmed
+565,103603,,,Adult 18+,Unharmed
+566,92657,Male,19.0,Adult 18+,Unharmed
+567,92657,Male,,Adult 18+,Unharmed
+568,93281,Male,41.0,Adult 18+,Unharmed
+569,92901,Male,,Adult 18+,Unharmed
+570,92675,Male,27.0,Adult 18+,Unharmed
+571,92764,Male,52.0,Adult 18+,Unharmed
+572,93304,Male,,Adult 18+,Unharmed
+573,93685,Male,,,Unharmed
+574,94255,Male,,Adult 18+,Unharmed
+575,92929,Male,21.0,Adult 18+,
+576,92929,Male,21.0,Adult 18+,
+577,92929,Male,18.0,Adult 18+,Injured
+578,92782,Male,,Adult 18+,Unharmed
+579,94293,Male,,Adult 18+,Unharmed
+580,94293,Male,,Adult 18+,Unharmed
+581,93185,Male,23.0,Adult 18+,Unharmed
+582,92784,Male,,Adult 18+,Unharmed
+583,94466,Male,,,
+584,94466,Male,,,
+585,94466,Male,,,
+586,103005,Male,21.0,Adult 18+,Killed
+587,92911,Male,,Adult 18+,Unharmed
+588,92942,Male,,,Unharmed
+589,92954,Female,34.0,Adult 18+,"Unharmed, Arrested"
+590,92870,Male,49.0,Adult 18+,Unharmed
+591,871408,Male,27.0,Adult 18+,"Unharmed, Arrested"
+592,94054,Male,,Adult 18+,Unharmed
+593,94054,Male,,Adult 18+,Unharmed
+594,94054,Male,,Adult 18+,Unharmed
+595,93865,Male,51.0,Adult 18+,Unharmed
+596,92633,Male,19.0,Adult 18+,Unharmed
+597,92633,Male,,Adult 18+,Unharmed
+598,92633,Male,,Adult 18+,Unharmed
+599,92778,Male,36.0,Adult 18+,Unharmed
+600,92976,Male,26.0,Adult 18+,"Injured, Arrested"
+601,97704,Male,55.0,Adult 18+,Unharmed
+602,97704,Male,,Adult 18+,Unharmed
+603,92759,Male,,Adult 18+,Unharmed
+604,92759,Male,,Adult 18+,Unharmed
+605,100270,Male,,Adult 18+,Unharmed
+606,93621,Male,,Adult 18+,Unharmed
+607,93621,Male,,Adult 18+,Unharmed
+608,92650,Female,19.0,Adult 18+,Unharmed
+609,92856,Male,,Adult 18+,Unharmed
+610,99147,Male,,Adult 18+,Unharmed
+611,92642,Male,27.0,Adult 18+,Unharmed
+612,99145,Male,,Adult 18+,Unharmed
+613,92853,Male,,,Unharmed
+614,92853,Male,,,Unharmed
+615,93137,Male,,,Unharmed
+616,92635,Male,,Adult 18+,Unharmed
+617,93165,Male,19.0,Adult 18+,Unharmed
+618,93165,Male,26.0,Adult 18+,Unharmed
+619,95456,Male,,Adult 18+,Unharmed
+620,95456,Male,,Adult 18+,Unharmed
+621,93087,Male,,Adult 18+,Unharmed
+622,93415,Male,72.0,Adult 18+,Injured
+623,94970,Female,34.0,Adult 18+,Unharmed
+624,116758,,,Adult 18+,Unharmed
+625,93841,Male,32.0,Adult 18+,Unharmed
+626,93085,Male,40.0,Adult 18+,Killed
+627,109103,Male,20.0,Adult 18+,Unharmed
+628,109103,Male,19.0,Adult 18+,Unharmed
+629,109103,Male,20.0,Adult 18+,Unharmed
+630,93059,Male,,Adult 18+,Unharmed
+631,93827,Male,18.0,Adult 18+,Unharmed
+632,93009,,,Adult 18+,Unharmed
+633,93381,Male,34.0,Adult 18+,Unharmed
+634,126518,Male,21.0,Adult 18+,Unharmed
+635,126518,Male,23.0,Adult 18+,Unharmed
+636,126518,Male,20.0,Adult 18+,Unharmed
+637,92891,Male,,Adult 18+,Unharmed
+638,92891,Male,,Adult 18+,Unharmed
+639,92891,Male,,Adult 18+,Unharmed
+640,92891,Male,,Adult 18+,Unharmed
+641,93112,Male,,Adult 18+,Unharmed
+642,93465,Male,,,Unharmed
+643,93241,Male,70.0,Adult 18+,Unharmed
+644,93457,Male,46.0,Adult 18+,Unharmed
+645,99933,Male,16.0,Teen 12-17,Unharmed
+646,93904,Male,,Adult 18+,Unharmed
+647,93100,,,,Unharmed
+648,93100,,,,Unharmed
+649,93843,Male,,Adult 18+,Unharmed
+650,93238,Male,88.0,Adult 18+,Unharmed
+651,93229,Male,,Teen 12-17,Injured
+652,93229,Male,,,Unharmed
+653,94403,Male,48.0,Adult 18+,Unharmed
+654,93006,Male,,Adult 18+,Unharmed
+655,93034,Male,23.0,Adult 18+,Unharmed
+656,93034,Male,,Adult 18+,Unharmed
+657,93275,Male,38.0,Adult 18+,Unharmed
+658,93582,Male,31.0,Adult 18+,Unharmed
+659,93582,Male,54.0,Adult 18+,Unharmed
+660,93582,Male,36.0,Adult 18+,Unharmed
+661,92951,Male,20.0,Adult 18+,Unharmed
+662,93320,Male,,Adult 18+,Unharmed
+663,93149,,18.0,Adult 18+,Unharmed
+664,96633,Male,29.0,Adult 18+,Unharmed
+665,93223,Male,,Adult 18+,Unharmed
+666,93223,Male,,Adult 18+,Unharmed
+667,93747,Male,,Adult 18+,Unharmed
+668,93208,Male,,Adult 18+,Unharmed
+669,93042,Male,,Adult 18+,Unharmed
+670,93417,Male,,Adult 18+,Killed
+671,94016,Male,,Adult 18+,Unharmed
+672,94016,Male,,Adult 18+,Unharmed
+673,94016,Male,,Adult 18+,Unharmed
+674,93139,Male,22.0,Adult 18+,Unharmed
+675,93315,Male,39.0,Adult 18+,Unharmed
+676,94011,Male,,Adult 18+,Unharmed
+677,92984,Male,,Adult 18+,Unharmed
+678,93115,Male,,Adult 18+,Unharmed
+679,93571,Male,23.0,Adult 18+,Unharmed
+680,93571,,28.0,Adult 18+,Unharmed
+681,93688,Male,,Adult 18+,Unharmed
+682,92967,Male,24.0,Adult 18+,Unharmed
+683,94551,Male,,Adult 18+,Unharmed
+684,93056,Male,27.0,Adult 18+,Unharmed
+685,93168,Male,,Adult 18+,Unharmed
+686,92959,Male,,Adult 18+,
+687,93367,Male,39.0,Adult 18+,"Unharmed, Arrested"
+688,93040,Male,20.0,Adult 18+,Unharmed
+689,93019,Male,36.0,Adult 18+,"Unharmed, Arrested"
+690,93330,Male,61.0,Adult 18+,"Unharmed, Arrested"
+691,93330,Male,23.0,Adult 18+,"Unharmed, Arrested"
+692,456222,Male,32.0,Adult 18+,"Unharmed, Arrested"
+693,92822,Male,,Adult 18+,Unharmed
+694,95118,Male,18.0,Adult 18+,Unharmed
+695,93709,Male,66.0,Adult 18+,Unharmed
+696,94524,Male,70.0,Adult 18+,Injured
+697,94444,Male,51.0,Adult 18+,Killed
+698,93728,Male,,Adult 18+,Unharmed
+699,93728,Male,,Adult 18+,Unharmed
+700,93728,Male,,Adult 18+,Unharmed
+701,93197,Male,,Adult 18+,Unharmed
+702,92945,Male,28.0,Adult 18+,Unharmed
+703,93026,Male,,Adult 18+,Unharmed
+704,183541,Male,,Adult 18+,Unharmed
+705,183541,Male,,Adult 18+,Unharmed
+706,93257,Male,21.0,Adult 18+,Unharmed
+707,93257,Male,21.0,Adult 18+,Unharmed
+708,93257,Male,21.0,Adult 18+,Unharmed
+709,93257,Male,21.0,Adult 18+,Unharmed
+710,93023,Male,,,
+711,93023,Male,,,
+712,149111,Male,24.0,Adult 18+,Unharmed
+713,94007,Male,,Adult 18+,Unharmed
+714,131388,Female,25.0,Adult 18+,Unharmed
+715,93134,,,,Unharmed
+716,93574,Male,36.0,Adult 18+,Unharmed
+717,93191,Male,20.0,Adult 18+,Unharmed
+718,93191,Male,18.0,,Unharmed
+719,93272,Male,,Adult 18+,Unharmed
+720,92917,Male,,Adult 18+,Unharmed
+721,93030,Male,,Adult 18+,Unharmed
+722,93030,Male,,Adult 18+,Unharmed
+723,94500,,,Teen 12-17,Unharmed
+724,94500,,,Teen 12-17,Unharmed
+725,94500,,,Teen 12-17,Unharmed
+726,94500,,,Teen 12-17,Unharmed
+727,93016,Male,70.0,Adult 18+,Unharmed
+728,93155,Male,21.0,Adult 18+,Unharmed
+729,93155,Male,19.0,Adult 18+,Unharmed
+730,93155,Male,21.0,Adult 18+,Unharmed
+731,93155,Male,20.0,Adult 18+,Unharmed
+732,93279,Male,23.0,Adult 18+,Unharmed
+733,93425,Male,63.0,,Unharmed
+734,93551,Male,,Teen 12-17,Unharmed
+735,93551,Male,,Adult 18+,Unharmed
+736,95130,Male,,Adult 18+,
+737,94546,Male,29.0,Adult 18+,"Unharmed, Arrested"
+738,93360,Male,,Adult 18+,Unharmed
+739,93526,Male,30.0,Adult 18+,Unharmed
+740,94406,Male,,Adult 18+,Unharmed
+741,93516,Male,,Adult 18+,Unharmed
+742,106260,Male,36.0,Adult 18+,Unharmed
+743,93723,,,Adult 18+,Unharmed
+744,93534,Male,,Adult 18+,Unharmed
+745,93703,Male,,Adult 18+,Unharmed
+746,93497,Male,31.0,Adult 18+,Unharmed
+747,93073,Male,,,
+748,93073,Male,,,
+749,93064,Male,21.0,Adult 18+,Unharmed
+750,93064,Male,19.0,Adult 18+,Unharmed
+751,93064,Male,25.0,Adult 18+,Unharmed
+752,93391,Male,20.0,Adult 18+,Unharmed
+753,94629,Male,28.0,Adult 18+,Unharmed
+754,93409,Male,,Adult 18+,Unharmed
+755,93409,Male,,Adult 18+,Unharmed
+756,94672,Male,49.0,Adult 18+,Unharmed
+757,93076,Male,13.0,Teen 12-17,Unharmed
+758,93771,,,,Unharmed
+759,93420,Male,,Adult 18+,Unharmed
+760,93160,Male,,Adult 18+,Unharmed
+761,93200,Male,,,
+762,93697,Male,,Adult 18+,Unharmed
+763,93782,Female,18.0,Adult 18+,Unharmed
+764,93782,Male,21.0,Adult 18+,Unharmed
+765,95079,Female,19.0,Adult 18+,Unharmed
+766,93092,Male,21.0,Adult 18+,Unharmed
+767,93811,Male,,Adult 18+,Unharmed
+768,93811,Male,,Adult 18+,Unharmed
+769,93448,Male,27.0,Adult 18+,Unharmed
+770,93448,Male,29.0,Adult 18+,Injured
+771,93448,Male,27.0,Adult 18+,Unharmed
+772,112309,Male,,Adult 18+,Unharmed
+773,93103,Male,40.0,Adult 18+,Unharmed
+774,93851,Male,,Adult 18+,Unharmed
+775,93451,Male,16.0,Teen 12-17,Killed
+776,114588,Male,,Adult 18+,Unharmed
+777,119705,Male,22.0,Adult 18+,Unharmed
+778,93249,Male,,Adult 18+,Unharmed
+779,94725,Male,48.0,Adult 18+,Unharmed
+780,93568,Male,,Adult 18+,Unharmed
+781,93251,Male,,Adult 18+,Unharmed
+782,93286,Male,23.0,Adult 18+,Unharmed
+783,94874,Male,18.0,Adult 18+,Unharmed
+784,93670,Male,,,Unharmed
+785,93364,Male,,Adult 18+,Unharmed
+786,94480,Male,,Adult 18+,Unharmed
+787,94480,Male,,Adult 18+,Unharmed
+788,93376,Male,,Adult 18+,Unharmed
+789,94872,Male,19.0,Adult 18+,Unharmed
+790,93215,Male,,,Unharmed
+791,93396,Male,,Adult 18+,Unharmed
+792,93357,Male,20.0,Adult 18+,"Unharmed, Arrested"
+793,93172,Male,,,
+794,93172,Male,,,
+795,93089,Female,55.0,Adult 18+,"Unharmed, Arrested"
+796,93179,Male,34.0,Adult 18+,"Unharmed, Arrested"
+797,93118,Female,,Adult 18+,"Unharmed, Arrested"
+798,108878,Male,30.0,Adult 18+,Unharmed
+799,93824,Male,18.0,Adult 18+,Unharmed
+800,93735,Male,,Adult 18+,Unharmed
+801,93735,Male,,Adult 18+,Unharmed
+802,93735,Male,,Adult 18+,Unharmed
+803,93735,Male,,Adult 18+,Unharmed
+804,94514,Male,21.0,Adult 18+,Unharmed
+805,103304,Male,55.0,Adult 18+,Injured
+806,94821,Male,26.0,Adult 18+,"Unharmed, Arrested"
+807,93462,Male,25.0,Adult 18+,Unharmed
+808,93462,Male,29.0,Adult 18+,Unharmed
+809,93800,Male,17.0,Teen 12-17,Unharmed
+810,93800,Male,,,Unharmed
+811,93541,Male,40.0,Adult 18+,Unharmed
+812,93226,Male,,Adult 18+,Unharmed
+813,93807,Male,,Adult 18+,Unharmed
+814,93807,Male,,Adult 18+,Unharmed
+815,94623,Male,18.0,Adult 18+,Unharmed
+816,93121,,,Adult 18+,Injured
+817,93663,Male,,Adult 18+,Unharmed
+818,93868,Male,,Adult 18+,Unharmed
+819,103758,Male,,Adult 18+,Unharmed
+820,103758,Male,,Adult 18+,Unharmed
+821,103758,Male,,Adult 18+,Unharmed
+822,93327,Male,,Adult 18+,Unharmed
+823,93327,Male,23.0,Adult 18+,Unharmed
+824,93302,Male,,Adult 18+,Unharmed
+825,152820,Male,36.0,Adult 18+,Unharmed
+826,94389,Male,25.0,Adult 18+,Unharmed
+827,93299,Male,,Adult 18+,Unharmed
+828,93299,Male,,Adult 18+,Unharmed
+829,93495,Male,,Adult 18+,Unharmed
+830,93495,Male,,Adult 18+,Unharmed
+831,95188,Male,,Adult 18+,Unharmed
+832,95188,Male,,Adult 18+,Unharmed
+833,93958,Male,,Adult 18+,Unharmed
+834,93712,Male,,Adult 18+,Unharmed
+835,95760,Male,,Adult 18+,Unharmed
+836,95760,Female,,Adult 18+,Unharmed
+837,93990,Male,,Adult 18+,Unharmed
+838,93990,Male,,Adult 18+,Unharmed
+839,93715,Male,,Adult 18+,Unharmed
+840,93993,Male,,Adult 18+,Unharmed
+841,93993,Male,,Adult 18+,Unharmed
+842,93720,Male,,Adult 18+,Unharmed
+843,93720,Male,,Adult 18+,Unharmed
+844,93720,Male,,Adult 18+,Unharmed
+845,93597,Male,,Adult 18+,Unharmed
+846,93942,Male,,Adult 18+,Unharmed
+847,94662,Male,26.0,Adult 18+,Unharmed
+848,93893,Female,24.0,Adult 18+,Unharmed
+849,93270,Male,21.0,Adult 18+,Unharmed
+850,93270,Male,22.0,Adult 18+,Unharmed
+851,93270,Male,21.0,Adult 18+,Unharmed
+852,93270,Male,23.0,Adult 18+,Unharmed
+853,94032,Male,17.0,Teen 12-17,"Unharmed, Arrested"
+854,93706,Male,,Adult 18+,Unharmed
+855,93706,Male,,Adult 18+,Unharmed
+856,93682,Male,31.0,Adult 18+,"Unharmed, Arrested"
+857,93682,Male,19.0,Adult 18+,"Unharmed, Arrested"
+858,93682,Male,23.0,Adult 18+,"Unharmed, Arrested"
+859,93785,Male,18.0,Adult 18+,Unharmed
+860,93765,Male,27.0,Adult 18+,"Unharmed, Arrested"
+861,93765,Male,28.0,Adult 18+,"Unharmed, Arrested"
+862,93765,Male,28.0,Adult 18+,"Unharmed, Arrested"
+863,93374,Male,,Adult 18+,Unharmed
+864,105137,Male,,Adult 18+,Injured
+865,105137,Male,,Adult 18+,Unharmed
+866,94735,Male,27.0,Adult 18+,Unharmed
+867,703767,Male,49.0,Adult 18+,"Unharmed, Arrested"
+868,93760,Male,16.0,Teen 12-17,Unharmed
+869,93760,Male,16.0,Teen 12-17,Unharmed
+870,93260,Male,,Adult 18+,Unharmed
+871,93562,Male,,Adult 18+,Unharmed
+872,93264,Male,,Adult 18+,Unharmed
+873,93264,Male,,Adult 18+,Unharmed
+874,105169,Male,30.0,Adult 18+,Unharmed
+875,93700,Male,38.0,Adult 18+,Unharmed
+876,94600,Male,33.0,Adult 18+,Unharmed
+877,94800,Male,,Adult 18+,Unharmed
+878,94800,Male,,Adult 18+,Unharmed
+879,94800,Male,,Adult 18+,Unharmed
+880,93387,Male,34.0,Adult 18+,Unharmed
+881,93793,Male,25.0,Adult 18+,Unharmed
+882,93501,Male,,Adult 18+,Unharmed
+883,93501,Male,,Adult 18+,Unharmed
+884,102770,Male,21.0,Adult 18+,Unharmed
+885,102770,Male,27.0,Adult 18+,Unharmed
+886,93523,Male,,Adult 18+,Unharmed
+887,94343,Male,,Adult 18+,Unharmed
+888,94343,Male,,Adult 18+,Unharmed
+889,94343,Male,,Adult 18+,Unharmed
+890,93691,Male,,Adult 18+,Unharmed
+891,93529,Male,18.0,Adult 18+,Unharmed
+892,94367,Male,25.0,Adult 18+,Killed
+893,94439,Male,,Adult 18+,Unharmed
+894,94439,Male,,Adult 18+,Unharmed
+895,94439,Male,,Adult 18+,Unharmed
+896,94469,Male,24.0,Adult 18+,Unharmed
+897,93839,Male,,Adult 18+,Unharmed
+898,93839,Male,,Adult 18+,Unharmed
+899,93651,,,Adult 18+,Unharmed
+900,93651,,,Adult 18+,Unharmed
+901,101140,Male,18.0,Adult 18+,Unharmed
+902,101140,Male,19.0,Adult 18+,Unharmed
+903,101140,Male,18.0,Adult 18+,Unharmed
+904,93628,Male,21.0,Adult 18+,Unharmed
+905,93628,Male,16.0,Teen 12-17,Unharmed
+906,93846,Male,,Adult 18+,Unharmed
+907,95763,Male,,Adult 18+,Unharmed
+908,95763,Female,,Adult 18+,Unharmed
+909,93815,Male,,,Unharmed
+910,93636,Male,,Adult 18+,Unharmed
+911,93636,Male,,Adult 18+,Unharmed
+912,96013,Male,34.0,Adult 18+,Unharmed
+913,93472,Male,,Adult 18+,Unharmed
+914,93642,Male,,Adult 18+,Unharmed
+915,93642,Male,,Adult 18+,Unharmed
+916,93642,Male,,Adult 18+,Unharmed
+917,93642,Male,,Adult 18+,Unharmed
+918,96076,Male,26.0,Adult 18+,Unharmed
+919,93474,Male,,,Unharmed
+920,94004,Male,,,Unharmed
+921,94001,Male,,Adult 18+,Unharmed
+922,93768,Male,,Adult 18+,Unharmed
+923,97373,Male,,Adult 18+,Unharmed
+924,97373,Male,,Adult 18+,Unharmed
+925,93477,Male,46.0,Adult 18+,Unharmed
+926,94156,Male,,Adult 18+,Unharmed
+927,93775,Male,,Adult 18+,Unharmed
+928,93775,Male,,Adult 18+,Unharmed
+929,98208,Male,29.0,Adult 18+,Unharmed
+930,93608,,,Adult 18+,Unharmed
+931,94309,Male,27.0,Adult 18+,Unharmed
+932,93790,Male,26.0,Adult 18+,Unharmed
+933,93611,Male,21.0,Adult 18+,Unharmed
+934,95067,Male,18.0,Adult 18+,Unharmed
+935,93927,Male,,Adult 18+,Unharmed
+936,93927,Male,,Adult 18+,Unharmed
+937,94057,Male,,,Unharmed
+938,93923,Male,,Adult 18+,Unharmed
+939,94721,Male,24.0,Adult 18+,Unharmed
+940,94721,Male,21.0,Adult 18+,Unharmed
+941,94045,Male,36.0,Adult 18+,Unharmed
+942,94109,Male,,Adult 18+,Unharmed
+943,94109,Male,,Adult 18+,Unharmed
+944,105129,Male,43.0,Adult 18+,Killed
+945,93918,Male,31.0,Adult 18+,"Injured, Arrested"
+946,93918,Male,34.0,Adult 18+,"Unharmed, Arrested"
+947,105176,Male,,Adult 18+,Unharmed
+948,93616,Male,31.0,Adult 18+,Injured
+949,94041,Female,20.0,Adult 18+,Unharmed
+950,94041,Male,24.0,Adult 18+,Unharmed
+951,94920,Male,,,
+952,94287,Male,,Adult 18+,Unharmed
+953,94038,Female,20.0,Adult 18+,Unharmed
+954,94038,Male,24.0,Adult 18+,Unharmed
+955,94452,Male,25.0,Adult 18+,"Unharmed, Arrested"
+956,94227,Male,21.0,Adult 18+,Unharmed
+957,93898,Male,40.0,Adult 18+,Unharmed
+958,94539,Male,40.0,Adult 18+,Unharmed
+959,94539,Male,33.0,Adult 18+,Unharmed
+960,94022,Male,,Adult 18+,Unharmed
+961,94022,Male,,Adult 18+,Unharmed
+962,94559,Male,,Adult 18+,Unharmed
+963,94026,Male,,Adult 18+,Unharmed
+964,94026,Male,,Adult 18+,Unharmed
+965,94646,Male,,Adult 18+,Unharmed
+966,93666,Male,30.0,Adult 18+,Unharmed
+967,100124,Male,35.0,Adult 18+,Unharmed
+968,93896,Male,,Adult 18+,Unharmed
+969,94035,Male,59.0,Adult 18+,Injured
+970,94264,Male,26.0,Adult 18+,Unharmed
+971,94264,Male,23.0,Adult 18+,Unharmed
+972,105139,Male,,Adult 18+,Injured
+973,93658,Male,,Adult 18+,Unharmed
+974,93658,Male,,Adult 18+,Unharmed
+975,94200,Male,,Adult 18+,Unharmed
+976,94200,Male,,Adult 18+,Unharmed
+977,94557,Male,,Adult 18+,Unharmed
+978,94363,Male,28.0,Adult 18+,Unharmed
+979,94097,Male,,Adult 18+,Unharmed
+980,94097,Male,,Adult 18+,Unharmed
+981,94097,Male,,Adult 18+,Unharmed
+982,94315,Male,,Adult 18+,Unharmed
+983,93949,Male,,Adult 18+,Unharmed
+984,93949,Male,,Adult 18+,Unharmed
+985,93738,Male,,Adult 18+,Unharmed
+986,93738,Male,,Adult 18+,Unharmed
+987,94359,Male,,Adult 18+,Unharmed
+988,94359,Male,,Adult 18+,Unharmed
+989,94359,Male,,Adult 18+,Unharmed
+990,94359,Male,,Adult 18+,Unharmed
+991,94063,Male,,Adult 18+,Unharmed
+992,93741,Male,19.0,Adult 18+,Unharmed
+993,201915,Male,,Adult 18+,Killed
+994,93751,Female,,Adult 18+,Unharmed
+995,95380,Female,30.0,Adult 18+,Unharmed
+996,201927,Male,71.0,Adult 18+,Killed
+997,95524,Male,,Adult 18+,Unharmed
+998,94136,Male,,Adult 18+,Unharmed
+999,209247,Male,31.0,Adult 18+,Unharmed
