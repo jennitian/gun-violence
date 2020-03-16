@@ -1,0 +1,1001 @@
+gun_index,incident_id,n_guns_involved,gun_stolen,gun_type
+0,478855,2,Unknown,Unknown
+1,478855,2,Unknown,Unknown
+2,478959,2,Unknown,Handgun
+3,478959,2,Unknown,Handgun
+4,479363,2,Unknown,22 LR
+5,479363,2,Unknown,223 Rem [AR-15]
+6,491674,1,Unknown,Unknown
+7,479413,1,Unknown,Unknown
+8,479561,1,Unknown,Shotgun
+9,479554,1,Unknown,Handgun
+10,479573,1,Unknown,Handgun
+11,479580,1,Unknown,9mm
+12,479603,1,Unknown,Handgun
+13,480327,1,Unknown,45 Auto
+14,480358,1,Unknown,12 gauge
+15,481198,1,Unknown,7.62 [AK-47]
+16,481213,1,Unknown,45 Auto
+17,481229,1,Unknown,Handgun
+18,481237,1,Unknown,Unknown
+19,482771,4,Unknown,9mm
+20,482771,4,Unknown,9mm
+21,482771,4,Unknown,40 SW
+22,482771,4,Unknown,40 SW
+23,482856,1,Unknown,Shotgun
+24,483765,1,Unknown,Handgun
+25,484317,1,Unknown,Handgun
+26,484333,2,Not-stolen,40 SW
+27,484333,2,Unknown,Shotgun
+28,485746,3,Unknown,7.62 [AK-47]
+29,485746,3,Unknown,40 SW
+30,485746,3,Unknown,9mm
+31,485811,2,Unknown,Unknown
+32,485811,2,Unknown,Unknown
+33,489185,1,Unknown,9mm
+34,485885,2,Unknown,Unknown
+35,485885,2,Unknown,Unknown
+36,485979,2,Unknown,9mm
+37,485979,2,Unknown,45 Auto
+38,984353,1,Unknown,Unknown
+39,486027,1,Unknown,Unknown
+40,486142,1,Unknown,Unknown
+41,486244,1,Unknown,Unknown
+42,486209,1,Unknown,7.62 [AK-47]
+43,486316,1,Unknown,Unknown
+44,1007785,1,Unknown,Unknown
+45,486334,1,Unknown,44 Mag
+46,873575,1,Unknown,Unknown
+47,486611,1,Unknown,Unknown
+48,486605,1,Unknown,Unknown
+49,486623,1,Unknown,Unknown
+50,486977,1,Unknown,Unknown
+51,489581,2,Not-stolen,223 Rem [AR-15]
+52,489581,2,Unknown,44 Mag
+53,487659,1,Unknown,Unknown
+54,487670,1,Unknown,Unknown
+55,488992,1,Unknown,Unknown
+56,487833,1,Unknown,Unknown
+57,488547,1,Unknown,Other
+58,489121,1,Unknown,40 SW
+59,490048,1,Unknown,Unknown
+60,893251,1,Unknown,Unknown
+61,1023908,1,Unknown,Unknown
+62,490772,1,Unknown,38 Spl
+63,490767,3,Unknown,Handgun
+64,490767,3,Unknown,Handgun
+65,490767,3,Unknown,Handgun
+66,490943,1,Unknown,Handgun
+67,490954,1,Unknown,22 LR
+68,490932,1,Unknown,Unknown
+69,491037,1,Unknown,Unknown
+70,491181,1,Unknown,9mm
+71,491253,1,Unknown,Handgun
+72,491265,1,Unknown,9mm
+73,491292,1,Unknown,Unknown
+74,491438,1,Unknown,Unknown
+75,491473,1,Unknown,45 Auto
+76,964573,1,Unknown,Unknown
+77,491609,2,Unknown,223 Rem [AR-15]
+78,491609,2,Unknown,44 Mag
+79,491734,1,Unknown,Unknown
+80,492001,1,Unknown,380 Auto
+81,1074613,1,Unknown,Unknown
+82,491965,1,Unknown,7.62 [AK-47]
+83,491992,1,Unknown,9mm
+84,958032,1,Unknown,Handgun
+85,492270,2,Unknown,9mm
+86,492270,2,Unknown,40 SW
+87,492276,3,Unknown,22 LR
+88,492276,3,Unknown,410 gauge
+89,492276,3,Unknown,32 Auto
+90,479727,1,Unknown,Unknown
+91,479774,1,Unknown,Unknown
+92,479821,1,Unknown,40 SW
+93,480058,1,Unknown,Other
+94,480366,2,Unknown,9mm
+95,480366,2,Unknown,Shotgun
+96,480521,1,Unknown,7.62 [AK-47]
+97,480605,1,Unknown,22 LR
+98,480669,1,Unknown,Unknown
+99,480691,2,Stolen,Handgun
+100,480691,2,Stolen,Handgun
+101,480720,1,Unknown,Handgun
+102,670964,1,Unknown,Unknown
+103,984965,1,Unknown,Unknown
+104,481029,1,Unknown,Handgun
+105,1007851,1,Unknown,9mm
+106,492325,1,Unknown,Shotgun
+107,492699,1,Unknown,Unknown
+108,493893,1,Unknown,Handgun
+109,493882,1,Unknown,308 Win
+110,964582,1,Unknown,Unknown
+111,964576,1,Unknown,Unknown
+112,495171,1,Unknown,Unknown
+113,972570,1,Unknown,Unknown
+114,495332,1,Unknown,Unknown
+115,979523,1,Unknown,Unknown
+116,495566,1,Unknown,Unknown
+117,1012298,1,Unknown,Unknown
+118,496584,1,Unknown,Shotgun
+119,496634,1,Unknown,40 SW
+120,935147,1,Unknown,Unknown
+121,92623,1,Unknown,Unknown
+122,854799,1,Unknown,Unknown
+123,98134,1,Unknown,Unknown
+124,92563,1,Unknown,Unknown
+125,97976,1,Unknown,Unknown
+126,92117,1,Unknown,Unknown
+127,92135,1,Unknown,Unknown
+128,95286,1,Unknown,Unknown
+129,92453,1,Unknown,Unknown
+130,261045,2,Unknown,Other
+131,261045,2,Unknown,Other
+132,182940,1,Unknown,Unknown
+133,92859,1,Unknown,Unknown
+134,92151,1,Unknown,Unknown
+135,100729,1,Unknown,Unknown
+136,92508,1,Unknown,Unknown
+137,92771,1,Unknown,Unknown
+138,95297,1,Unknown,Rifle
+139,217094,1,Unknown,Unknown
+140,94427,1,Unknown,Unknown
+141,103026,1,Unknown,Unknown
+142,100284,1,Unknown,Handgun
+143,92954,1,Unknown,Unknown
+144,92774,1,Unknown,Unknown
+145,871408,1,Unknown,357 Mag
+146,93019,1,Unknown,Unknown
+147,92945,1,Unknown,Unknown
+148,935154,1,Unknown,Unknown
+149,94546,1,Unknown,Handgun
+150,94926,1,Unknown,Unknown
+151,93179,1,Unknown,Unknown
+152,93118,1,Unknown,Unknown
+153,107331,1,Unknown,Unknown
+154,94821,1,Unknown,Unknown
+155,94032,1,Unknown,Unknown
+156,93682,1,Unknown,40 SW
+157,105137,1,Unknown,Unknown
+158,703767,1,Unknown,Unknown
+159,93760,2,Unknown,Unknown
+160,93760,2,Unknown,Unknown
+161,174362,1,Unknown,Unknown
+162,94109,1,Unknown,Unknown
+163,108885,1,Unknown,Unknown
+164,93918,2,Stolen,22 LR
+165,93918,2,Stolen,Rifle
+166,105187,1,Unknown,Unknown
+167,94452,1,Not-stolen,Handgun
+168,105185,1,Unknown,Unknown
+169,94035,2,Unknown,Handgun
+170,94035,2,Unknown,Rifle
+171,94097,1,Unknown,Unknown
+172,94075,1,Unknown,Unknown
+173,94733,1,Unknown,Unknown
+174,106671,1,Unknown,Unknown
+175,94995,1,Unknown,Unknown
+176,103517,1,Unknown,Unknown
+177,95182,1,Unknown,Unknown
+178,94059,1,Unknown,Unknown
+179,94082,1,Unknown,Unknown
+180,94159,1,Unknown,Unknown
+181,93938,1,Unknown,Unknown
+182,94092,1,Unknown,Unknown
+183,95074,1,Unknown,Unknown
+184,93974,1,Unknown,Unknown
+185,286139,1,Stolen,Shotgun
+186,292428,1,Unknown,45 Auto
+187,261313,1,Unknown,Unknown
+188,993172,1,Unknown,16 gauge
+189,102714,1,Unknown,Unknown
+190,96916,1,Unknown,Unknown
+191,94708,1,Unknown,Unknown
+192,96129,1,Unknown,Unknown
+193,94782,1,Unknown,Unknown
+194,94151,1,Unknown,Unknown
+195,94791,1,Unknown,Unknown
+196,94520,1,Unknown,Unknown
+197,94760,1,Unknown,Unknown
+198,95594,1,Unknown,Unknown
+199,95586,1,Unknown,Unknown
+200,94785,1,Unknown,Unknown
+201,96037,1,Unknown,Unknown
+202,94245,1,Unknown,Handgun
+203,94944,1,Unknown,Unknown
+204,94794,1,Unknown,Unknown
+205,94994,1,Unknown,Unknown
+206,94654,1,Unknown,Handgun
+207,94805,1,Unknown,Unknown
+208,94886,1,Unknown,Unknown
+209,95556,1,Unknown,357 Mag
+210,95198,1,Unknown,Unknown
+211,291443,1,Unknown,Unknown
+212,599379,1,Unknown,12 gauge
+213,95973,1,Unknown,9mm
+214,217099,1,Unknown,Unknown
+215,95098,1,Unknown,Unknown
+216,94949,1,Unknown,Rifle
+217,95315,1,Unknown,Unknown
+218,773468,1,Unknown,Unknown
+219,106680,1,Unknown,45 Auto
+220,95323,1,Unknown,Unknown
+221,95916,1,Unknown,Unknown
+222,97127,1,Unknown,Unknown
+223,106683,1,Unknown,45 Auto
+224,96286,1,Unknown,Unknown
+225,95670,1,Unknown,Unknown
+226,95428,1,Unknown,Unknown
+227,95487,1,Unknown,Unknown
+228,95436,1,Unknown,Unknown
+229,95745,1,Unknown,Unknown
+230,95313,2,Unknown,40 SW
+231,95313,2,Unknown,357 Mag
+232,95335,1,Unknown,Unknown
+233,95909,1,Unknown,Unknown
+234,160404,1,Unknown,Unknown
+235,95975,1,Unknown,Unknown
+236,95661,1,Unknown,Unknown
+237,98630,1,Unknown,Unknown
+238,97661,1,Unknown,Unknown
+239,95613,1,Unknown,Unknown
+240,96487,1,Unknown,Unknown
+241,333919,2,Unknown,9mm
+242,333919,2,Unknown,Unknown
+243,95500,1,Unknown,Unknown
+244,96272,1,Unknown,Unknown
+245,225046,1,Unknown,Unknown
+246,96155,1,Unknown,Unknown
+247,96221,1,Unknown,Unknown
+248,96227,1,Unknown,Unknown
+249,217333,1,Unknown,Unknown
+250,104922,1,Unknown,Handgun
+251,102368,1,Unknown,Unknown
+252,96352,1,Unknown,Unknown
+253,225305,1,Unknown,Unknown
+254,95581,1,Unknown,Unknown
+255,95907,1,Unknown,Unknown
+256,95867,1,Unknown,Unknown
+257,96107,1,Unknown,Unknown
+258,95823,1,Unknown,Unknown
+259,95968,1,Unknown,Unknown
+260,96375,1,Unknown,Unknown
+261,507315,1,Unknown,9mm
+262,96683,1,Unknown,357 Mag
+263,100438,1,Unknown,Unknown
+264,96624,1,Unknown,Unknown
+265,96652,1,Unknown,Unknown
+266,96309,1,Unknown,Unknown
+267,96780,1,Unknown,Unknown
+268,206308,1,Unknown,Unknown
+269,96328,1,Unknown,Unknown
+270,96546,1,Unknown,Unknown
+271,96315,1,Unknown,Rifle
+272,96635,1,Unknown,Unknown
+273,96204,1,Unknown,Unknown
+274,97602,1,Unknown,Unknown
+275,96649,1,Unknown,Unknown
+276,97900,1,Unknown,22 LR
+277,96483,1,Unknown,Unknown
+278,97507,1,Unknown,Unknown
+279,419403,1,Unknown,Rifle
+280,96326,1,Unknown,Unknown
+281,106702,1,Unknown,22 LR
+282,97134,1,Unknown,Unknown
+283,99123,1,Unknown,Unknown
+284,96850,1,Unknown,Unknown
+285,96709,1,Unknown,Unknown
+286,96753,1,Unknown,Unknown
+287,97209,1,Unknown,Unknown
+288,97551,1,Unknown,Unknown
+289,96568,4,Stolen,Unknown
+290,96568,4,Stolen,Unknown
+291,96568,4,Unknown,Unknown
+292,96568,4,Unknown,Unknown
+293,98758,1,Unknown,Unknown
+294,97025,2,Unknown,38 Spl
+295,97025,2,Unknown,9mm
+296,191428,1,Unknown,Unknown
+297,97326,1,Unknown,Unknown
+298,339227,1,Unknown,Unknown
+299,97472,1,Unknown,Unknown
+300,97240,1,Unknown,Unknown
+301,97284,1,Unknown,Unknown
+302,97324,1,Unknown,Unknown
+303,114244,1,Unknown,Unknown
+304,98923,1,Unknown,Unknown
+305,98930,1,Unknown,Unknown
+306,97179,1,Unknown,Unknown
+307,97653,1,Unknown,Unknown
+308,98118,1,Unknown,Unknown
+309,217354,1,Unknown,Unknown
+310,97001,1,Unknown,Unknown
+311,97770,1,Unknown,Unknown
+312,97949,1,Unknown,Unknown
+313,97201,1,Unknown,30-30 Win
+314,97511,1,Unknown,Unknown
+315,97478,1,Unknown,Unknown
+316,97105,1,Unknown,Unknown
+317,97365,1,Unknown,Unknown
+318,99764,1,Unknown,Unknown
+319,97534,1,Unknown,Unknown
+320,671396,1,Stolen,40 SW
+321,217832,1,Unknown,Unknown
+322,97687,1,Unknown,Unknown
+323,97709,1,Unknown,12 gauge
+324,387657,4,Unknown,25 Auto
+325,387657,4,Unknown,38 Spl
+326,387657,4,Unknown,32 Auto
+327,387657,4,Unknown,22 LR
+328,106710,1,Unknown,22 LR
+329,629020,1,Unknown,45 Auto
+330,98595,1,Unknown,Unknown
+331,97523,1,Unknown,Unknown
+332,98216,1,Unknown,Unknown
+333,104381,3,Stolen,Handgun
+334,104381,3,Unknown,Handgun
+335,104381,3,Unknown,Handgun
+336,99175,1,Unknown,Unknown
+337,98519,1,Unknown,Unknown
+338,98627,1,Unknown,Unknown
+339,98088,1,Unknown,Unknown
+340,190678,1,Unknown,Unknown
+341,107021,4,Unknown,9mm
+342,107021,4,Unknown,45 Auto
+343,107021,4,Unknown,12 gauge
+344,107021,4,Unknown,22 LR
+345,97917,1,Unknown,Unknown
+346,98004,1,Unknown,Unknown
+347,112347,2,Unknown,Shotgun
+348,112347,2,Unknown,30-30 Win
+349,97726,1,Unknown,Unknown
+350,98500,1,Unknown,Unknown
+351,98073,1,Unknown,Unknown
+352,98261,1,Unknown,Unknown
+353,98204,1,Unknown,Unknown
+354,98314,1,Unknown,Unknown
+355,99182,1,Unknown,Unknown
+356,99242,1,Unknown,Unknown
+357,98719,1,Unknown,Unknown
+358,98735,1,Unknown,Unknown
+359,98774,1,Unknown,Unknown
+360,98319,1,Unknown,Unknown
+361,99833,1,Unknown,Unknown
+362,98107,1,Unknown,Unknown
+363,100889,1,Unknown,Unknown
+364,98256,1,Unknown,Unknown
+365,101533,1,Unknown,Unknown
+366,99300,1,Unknown,Unknown
+367,98457,1,Unknown,Unknown
+368,112809,1,Unknown,Unknown
+369,98553,1,Unknown,Unknown
+370,98703,1,Unknown,Unknown
+371,729789,1,Unknown,Unknown
+372,98525,1,Unknown,7.62 [AK-47]
+373,100706,1,Unknown,Unknown
+374,465338,1,Unknown,22 LR
+375,98426,1,Unknown,Unknown
+376,99213,1,Unknown,Unknown
+377,106307,1,Unknown,Unknown
+378,98301,1,Unknown,Unknown
+379,98311,1,Unknown,Unknown
+380,98667,1,Unknown,Unknown
+381,100288,1,Unknown,380 Auto
+382,98687,1,Unknown,Unknown
+383,99449,1,Unknown,Unknown
+384,99358,1,Unknown,Unknown
+385,99325,1,Unknown,Handgun
+386,99273,1,Unknown,Unknown
+387,99748,1,Unknown,Unknown
+388,98696,1,Unknown,Unknown
+389,99674,1,Unknown,Unknown
+390,99298,1,Unknown,Unknown
+391,99184,1,Unknown,Unknown
+392,98590,1,Unknown,Unknown
+393,98629,1,Unknown,Unknown
+394,100405,1,Unknown,Unknown
+395,99588,1,Unknown,Unknown
+396,99165,1,Unknown,Unknown
+397,98844,1,Unknown,Unknown
+398,99236,1,Unknown,Unknown
+399,100077,1,Unknown,Unknown
+400,100153,1,Unknown,Unknown
+401,99227,1,Unknown,Unknown
+402,99590,1,Unknown,38 Spl
+403,99888,1,Unknown,Handgun
+404,99698,1,Unknown,Unknown
+405,99960,1,Unknown,Handgun
+406,99566,1,Unknown,Unknown
+407,99564,1,Unknown,Unknown
+408,99371,1,Unknown,Unknown
+409,100069,1,Unknown,Unknown
+410,100219,2,Unknown,Handgun
+411,100219,2,Unknown,Handgun
+412,100019,1,Unknown,Unknown
+413,217847,1,Unknown,Unknown
+414,99320,1,Unknown,Unknown
+415,99970,1,Unknown,Unknown
+416,100010,1,Unknown,Unknown
+417,100832,1,Unknown,Unknown
+418,101805,1,Unknown,Unknown
+419,100161,2,Unknown,Unknown
+420,100161,2,Unknown,Unknown
+421,283248,1,Unknown,Unknown
+422,99831,1,Unknown,Unknown
+423,99921,1,Unknown,Unknown
+424,100107,1,Unknown,Unknown
+425,99630,1,Unknown,Unknown
+426,102933,1,Unknown,Unknown
+427,102482,1,Unknown,Unknown
+428,134195,1,Unknown,Unknown
+429,99909,1,Unknown,Unknown
+430,101921,1,Unknown,9mm
+431,100008,1,Unknown,Unknown
+432,111799,1,Unknown,Unknown
+433,299632,1,Not-stolen,45 Auto
+434,100672,1,Unknown,Unknown
+435,100883,1,Unknown,Unknown
+436,101637,1,Unknown,Unknown
+437,111839,1,Unknown,Unknown
+438,102654,1,Unknown,308 Win
+439,101317,1,Unknown,Unknown
+440,100480,1,Unknown,38 Spl
+441,100475,1,Unknown,38 Spl
+442,102487,1,Unknown,Unknown
+443,101833,1,Unknown,Unknown
+444,101304,1,Unknown,Unknown
+445,100613,1,Unknown,Unknown
+446,100589,1,Unknown,Unknown
+447,100793,1,Unknown,Unknown
+448,284330,2,Unknown,Shotgun
+449,284330,2,Unknown,Handgun
+450,111824,1,Unknown,410 gauge
+451,299636,1,Stolen,Unknown
+452,100696,1,Unknown,Unknown
+453,100916,1,Unknown,Handgun
+454,101256,1,Unknown,Unknown
+455,109524,1,Unknown,Unknown
+456,101006,1,Unknown,12 gauge
+457,101070,1,Unknown,Unknown
+458,101206,1,Unknown,Unknown
+459,101828,1,Unknown,Unknown
+460,464869,1,Unknown,9mm
+461,101187,1,Unknown,Unknown
+462,102156,1,Unknown,Unknown
+463,101325,1,Unknown,Unknown
+464,101372,1,Unknown,Unknown
+465,102235,1,Unknown,Unknown
+466,102239,1,Unknown,Unknown
+467,101379,1,Unknown,Unknown
+468,101450,1,Unknown,Unknown
+469,101301,1,Unknown,Unknown
+470,101393,1,Unknown,Unknown
+471,101194,1,Unknown,Unknown
+472,111822,1,Unknown,Unknown
+473,101216,1,Unknown,Unknown
+474,101639,1,Unknown,Unknown
+475,102511,1,Unknown,Unknown
+476,101283,1,Unknown,Unknown
+477,113665,1,Unknown,Handgun
+478,102260,1,Unknown,Unknown
+479,102322,1,Unknown,Unknown
+480,109531,1,Unknown,Unknown
+481,102923,1,Unknown,Unknown
+482,110431,1,Unknown,Unknown
+483,101528,1,Unknown,Unknown
+484,101753,1,Unknown,Unknown
+485,189834,1,Unknown,Unknown
+486,879358,1,Unknown,Handgun
+487,101725,1,Unknown,Unknown
+488,101563,1,Unknown,Unknown
+489,101960,1,Unknown,Unknown
+490,101889,1,Unknown,Unknown
+491,101557,1,Unknown,Unknown
+492,102314,3,Unknown,Unknown
+493,102314,3,Unknown,Unknown
+494,102314,3,Unknown,Unknown
+495,105626,1,Unknown,Unknown
+496,273488,1,Unknown,357 Mag
+497,102205,1,Unknown,Unknown
+498,101927,1,Unknown,Unknown
+499,102098,1,Unknown,12 gauge
+500,114725,1,Unknown,45 Auto
+501,110443,1,Unknown,Unknown
+502,110442,1,Unknown,Unknown
+503,101807,1,Unknown,Unknown
+504,102265,1,Unknown,Unknown
+505,104109,1,Unknown,Unknown
+506,303511,1,Unknown,38 Spl
+507,102464,1,Unknown,Unknown
+508,102749,1,Unknown,Unknown
+509,110445,1,Unknown,Unknown
+510,102254,1,Unknown,Unknown
+511,124234,1,Unknown,Unknown
+512,104100,1,Unknown,Unknown
+513,106418,1,Unknown,Unknown
+514,102172,1,Unknown,Unknown
+515,104193,1,Unknown,45 Auto
+516,102494,1,Unknown,Unknown
+517,108921,1,Unknown,Unknown
+518,102087,1,Unknown,Unknown
+519,108932,1,Unknown,Unknown
+520,102545,1,Unknown,Unknown
+521,217855,1,Unknown,Unknown
+522,102868,1,Unknown,Unknown
+523,102908,1,Unknown,Shotgun
+524,102659,1,Stolen,Handgun
+525,102630,1,Unknown,Unknown
+526,181941,1,Unknown,Unknown
+527,105150,1,Unknown,Unknown
+528,104316,1,Unknown,Unknown
+529,102627,1,Unknown,Unknown
+530,103355,1,Unknown,Unknown
+531,103132,1,Unknown,Shotgun
+532,103396,1,Unknown,Unknown
+533,412594,1,Unknown,22 LR
+534,103428,1,Unknown,Unknown
+535,102854,1,Unknown,Unknown
+536,103045,1,Unknown,Unknown
+537,102763,1,Unknown,Unknown
+538,102752,1,Unknown,22 LR
+539,402249,1,Unknown,Unknown
+540,107025,1,Unknown,Unknown
+541,103785,1,Unknown,Unknown
+542,103049,6,Unknown,Rifle
+543,103049,6,Unknown,Handgun
+544,103049,6,Unknown,45 Auto
+545,103049,6,Unknown,40 SW
+546,103049,6,Unknown,38 Spl
+547,103049,6,Unknown,9mm
+548,114247,1,Unknown,Unknown
+549,103592,1,Unknown,Unknown
+550,107305,1,Unknown,9mm
+551,105663,1,Unknown,Unknown
+552,103258,1,Unknown,Unknown
+553,103521,1,Unknown,Unknown
+554,105088,1,Unknown,Unknown
+555,110653,1,Unknown,Unknown
+556,103538,1,Unknown,Unknown
+557,103607,1,Unknown,Unknown
+558,103777,1,Unknown,Unknown
+559,335422,1,Unknown,Shotgun
+560,104370,2,Unknown,Other
+561,104370,2,Unknown,Other
+562,107068,1,Unknown,Handgun
+563,103820,1,Unknown,9mm
+564,112501,1,Unknown,Unknown
+565,104126,1,Unknown,Unknown
+566,103704,1,Unknown,Unknown
+567,104261,1,Unknown,Unknown
+568,104246,1,Unknown,Unknown
+569,103979,1,Unknown,Unknown
+570,104135,1,Unknown,Unknown
+571,103828,2,Unknown,Handgun
+572,103828,2,Unknown,Handgun
+573,103802,1,Unknown,Unknown
+574,104168,1,Unknown,Shotgun
+575,112499,1,Unknown,Unknown
+576,104184,1,Unknown,Unknown
+577,105072,1,Unknown,Unknown
+578,458194,1,Stolen,22 LR
+579,104030,1,Unknown,Unknown
+580,104222,1,Stolen,45 Auto
+581,104390,1,Unknown,Unknown
+582,207252,1,Unknown,Unknown
+583,199472,1,Unknown,Unknown
+584,104203,1,Unknown,Unknown
+585,104016,1,Unknown,Rifle
+586,104212,1,Unknown,Unknown
+587,360542,1,Unknown,Unknown
+588,104218,1,Unknown,Handgun
+589,111195,1,Unknown,Unknown
+590,105992,1,Unknown,Unknown
+591,106995,1,Unknown,Handgun
+592,111203,1,Unknown,Unknown
+593,150462,1,Unknown,Unknown
+594,104608,1,Unknown,Unknown
+595,105060,1,Unknown,Unknown
+596,104543,1,Unknown,Shotgun
+597,104496,1,Not-stolen,9mm
+598,104513,1,Unknown,Unknown
+599,150468,1,Unknown,Unknown
+600,105283,1,Unknown,Unknown
+601,104829,1,Unknown,Unknown
+602,105675,1,Unknown,Unknown
+603,1000666,1,Unknown,Unknown
+604,104625,1,Unknown,Unknown
+605,104844,1,Unknown,Unknown
+606,105041,1,Unknown,Unknown
+607,105553,1,Unknown,Unknown
+608,150457,1,Unknown,Unknown
+609,445038,2,Unknown,9mm
+610,445038,2,Unknown,40 SW
+611,111205,1,Unknown,Unknown
+612,106402,1,Unknown,Unknown
+613,105658,1,Unknown,Unknown
+614,105063,1,Unknown,Unknown
+615,109723,1,Unknown,Unknown
+616,105631,1,Unknown,Unknown
+617,105074,1,Unknown,Unknown
+618,105258,1,Unknown,Unknown
+619,106108,1,Unknown,Unknown
+620,105981,1,Unknown,Handgun
+621,105534,1,Unknown,Unknown
+622,105520,1,Unknown,Rifle
+623,105790,1,Unknown,Unknown
+624,105780,2,Unknown,38 Spl
+625,105780,2,Unknown,40 SW
+626,332181,1,Unknown,Unknown
+627,105496,1,Unknown,9mm
+628,105583,1,Unknown,Unknown
+629,107044,1,Unknown,Unknown
+630,105409,1,Unknown,Unknown
+631,105797,1,Unknown,Unknown
+632,935185,1,Unknown,Unknown
+633,105311,1,Unknown,Unknown
+634,105707,1,Unknown,Unknown
+635,106071,1,Unknown,Handgun
+636,105599,1,Unknown,Unknown
+637,105615,1,Unknown,Unknown
+638,105891,1,Unknown,45 Auto
+639,106192,1,Unknown,Shotgun
+640,105377,1,Unknown,Unknown
+641,108431,1,Unknown,Unknown
+642,105794,1,Unknown,Unknown
+643,106017,1,Unknown,Unknown
+644,106044,1,Unknown,Unknown
+645,110973,1,Unknown,22 LR
+646,112523,1,Unknown,Unknown
+647,106266,1,Unknown,Unknown
+648,106163,1,Unknown,Unknown
+649,450580,1,Unknown,Unknown
+650,1057043,1,Unknown,Unknown
+651,106519,1,Unknown,Unknown
+652,107017,1,Stolen,45 Auto
+653,108423,1,Unknown,Unknown
+654,106101,1,Unknown,Unknown
+655,106048,1,Unknown,38 Spl
+656,106394,1,Unknown,Unknown
+657,326125,1,Unknown,Handgun
+658,106249,1,Unknown,Unknown
+659,106751,1,Unknown,Unknown
+660,106725,1,Unknown,Unknown
+661,107381,1,Unknown,22 LR
+662,106361,1,Unknown,Unknown
+663,106570,1,Unknown,9mm
+664,106763,1,Unknown,40 SW
+665,132838,1,Unknown,Unknown
+666,106845,1,Unknown,Unknown
+667,106933,1,Unknown,Unknown
+668,106441,1,Unknown,Unknown
+669,111273,1,Unknown,Unknown
+670,111279,1,Unknown,Unknown
+671,107475,1,Unknown,9mm
+672,288064,1,Stolen,380 Auto
+673,109288,1,Unknown,Unknown
+674,106875,1,Unknown,Unknown
+675,112968,1,Unknown,Unknown
+676,107456,1,Unknown,Unknown
+677,108112,1,Unknown,Unknown
+678,130527,1,Unknown,Unknown
+679,107819,1,Unknown,Unknown
+680,362610,1,Unknown,22 LR
+681,107753,1,Unknown,Unknown
+682,107503,1,Unknown,Unknown
+683,107588,1,Unknown,223 Rem [AR-15]
+684,107879,1,Unknown,Unknown
+685,107396,1,Unknown,40 SW
+686,107591,1,Unknown,Unknown
+687,109012,1,Unknown,Unknown
+688,107594,1,Unknown,Unknown
+689,183975,1,Unknown,Unknown
+690,941730,1,Unknown,Unknown
+691,107806,1,Unknown,Unknown
+692,111308,1,Unknown,Unknown
+693,108411,1,Unknown,Unknown
+694,112592,1,Unknown,Unknown
+695,112591,1,Unknown,Unknown
+696,108675,1,Unknown,Unknown
+697,108447,1,Unknown,Unknown
+698,108145,1,Unknown,Unknown
+699,108527,1,Unknown,Unknown
+700,107954,1,Unknown,Unknown
+701,107949,1,Unknown,Unknown
+702,174731,1,Unknown,Unknown
+703,108166,1,Unknown,Unknown
+704,107984,1,Unknown,Unknown
+705,318450,2,Unknown,Unknown
+706,318450,2,Unknown,Unknown
+707,108391,1,Unknown,Unknown
+708,111008,1,Unknown,22 LR
+709,802416,1,Unknown,22 LR
+710,108389,1,Unknown,Unknown
+711,112503,1,Unknown,Unknown
+712,110357,1,Unknown,Unknown
+713,108476,1,Unknown,Unknown
+714,108460,1,Unknown,Unknown
+715,108200,1,Unknown,Unknown
+716,108300,1,Unknown,Unknown
+717,108328,1,Unknown,Unknown
+718,109080,1,Unknown,Unknown
+719,128589,1,Unknown,Unknown
+720,164024,1,Unknown,Unknown
+721,109039,1,Unknown,Unknown
+722,108987,1,Unknown,Unknown
+723,108468,1,Unknown,Unknown
+724,118326,1,Unknown,Unknown
+725,108439,1,Unknown,Unknown
+726,108691,1,Unknown,Unknown
+727,108967,1,Unknown,Unknown
+728,111017,1,Unknown,Unknown
+729,108598,1,Unknown,Unknown
+730,110410,1,Unknown,Unknown
+731,111319,1,Unknown,Unknown
+732,108649,1,Unknown,Unknown
+733,110750,1,Unknown,Unknown
+734,108984,1,Unknown,Unknown
+735,109993,1,Unknown,Unknown
+736,109784,1,Unknown,Unknown
+737,109082,1,Unknown,Unknown
+738,109265,1,Unknown,Unknown
+739,110462,1,Unknown,Unknown
+740,111734,1,Unknown,Unknown
+741,108796,1,Unknown,Unknown
+742,109118,1,Unknown,Unknown
+743,219964,1,Unknown,Unknown
+744,118328,1,Unknown,Unknown
+745,110094,1,Unknown,Unknown
+746,109856,1,Unknown,Unknown
+747,109169,1,Unknown,Unknown
+748,109423,1,Unknown,Unknown
+749,109757,1,Unknown,Unknown
+750,109455,1,Unknown,Unknown
+751,109689,1,Unknown,Unknown
+752,705934,1,Unknown,Unknown
+753,109291,1,Not-stolen,9mm
+754,111739,1,Unknown,Unknown
+755,109142,1,Unknown,Unknown
+756,110407,1,Unknown,Unknown
+757,110048,1,Unknown,Unknown
+758,109947,1,Unknown,Unknown
+759,109802,1,Unknown,9mm
+760,109769,1,Unknown,Unknown
+761,110425,1,Unknown,Unknown
+762,109412,1,Unknown,Unknown
+763,109690,1,Unknown,Unknown
+764,109702,1,Unknown,Unknown
+765,110098,1,Unknown,Unknown
+766,118337,1,Unknown,Unknown
+767,353797,1,Unknown,Unknown
+768,110888,1,Unknown,Unknown
+769,118616,1,Unknown,Shotgun
+770,110090,1,Unknown,Unknown
+771,110024,1,Unknown,Unknown
+772,261137,1,Stolen,9mm
+773,111742,1,Unknown,Unknown
+774,111710,1,Unknown,9mm
+775,110250,1,Unknown,Unknown
+776,111751,1,Unknown,Unknown
+777,109849,2,Unknown,Unknown
+778,109849,2,Unknown,Unknown
+779,109959,1,Unknown,Unknown
+780,109812,1,Unknown,Unknown
+781,110054,1,Unknown,Unknown
+782,109808,1,Unknown,Unknown
+783,120634,1,Unknown,22 LR
+784,449798,1,Unknown,32 Auto
+785,218089,1,Unknown,Unknown
+786,367965,2,Unknown,Rifle
+787,367965,2,Unknown,Handgun
+788,110010,1,Unknown,Unknown
+789,110422,1,Unknown,Unknown
+790,110316,1,Unknown,Unknown
+791,110228,1,Unknown,Unknown
+792,282195,1,Unknown,Other
+793,111752,1,Unknown,Unknown
+794,111749,1,Unknown,Unknown
+795,110100,1,Unknown,Unknown
+796,110481,1,Unknown,Unknown
+797,110341,1,Unknown,Unknown
+798,110332,1,Unknown,Unknown
+799,111486,1,Unknown,Unknown
+800,111756,1,Unknown,Unknown
+801,111760,1,Unknown,Unknown
+802,392819,2,Stolen,45 Auto
+803,392819,2,Stolen,45 Auto
+804,110584,1,Unknown,Unknown
+805,110565,1,Unknown,Unknown
+806,712063,2,Unknown,Unknown
+807,712063,2,Unknown,Unknown
+808,112705,1,Unknown,Unknown
+809,111403,1,Unknown,Unknown
+810,111064,1,Unknown,Unknown
+811,110904,1,Unknown,Unknown
+812,110715,25,Unknown,Unknown
+813,110715,25,Unknown,Unknown
+814,110715,25,Unknown,Unknown
+815,110715,25,Unknown,Unknown
+816,110715,25,Unknown,Unknown
+817,110715,25,Unknown,Unknown
+818,110715,25,Unknown,Unknown
+819,110715,25,Unknown,Unknown
+820,110715,25,Unknown,Unknown
+821,110715,25,Unknown,Unknown
+822,110715,25,Unknown,Unknown
+823,110715,25,Unknown,Unknown
+824,110715,25,Unknown,Unknown
+825,110715,25,Unknown,Unknown
+826,110715,25,Unknown,Unknown
+827,110715,25,Unknown,Unknown
+828,110715,25,Unknown,Unknown
+829,110715,25,Unknown,Unknown
+830,110715,25,Unknown,Unknown
+831,110715,25,Unknown,Unknown
+832,110715,25,Unknown,Unknown
+833,110715,25,Unknown,Unknown
+834,110715,25,Unknown,Unknown
+835,110715,25,Unknown,Unknown
+836,110715,25,Unknown,Unknown
+837,111266,1,Unknown,357 Mag
+838,433725,1,Unknown,38 Spl
+839,110939,1,Unknown,Unknown
+840,110753,1,Unknown,Handgun
+841,110890,1,Unknown,Unknown
+842,810502,1,Unknown,Unknown
+843,111436,1,Unknown,Unknown
+844,111117,1,,
+845,111419,1,,
+846,111264,1,,
+847,123572,1,,
+848,111442,1,,
+849,111427,1,,
+850,111440,1,,
+851,111784,1,,
+852,111410,1,,
+853,111720,1,,
+854,699283,2,,
+855,699283,2,,
+856,111416,1,,
+857,113307,1,,
+858,111425,1,,
+859,111153,1,,
+860,119082,1,,
+861,111501,1,,
+862,111449,1,,
+863,112213,1,,
+864,112075,1,,
+865,111559,1,,
+866,112972,1,,
+867,111718,1,,
+868,111377,1,,
+869,117268,1,,
+870,111899,1,,
+871,112153,1,,
+872,111849,1,,
+873,111951,1,,
+874,335760,1,,
+875,112035,1,,
+876,112589,1,,
+877,112082,1,,
+878,112539,1,,
+879,407051,2,,
+880,407051,2,,
+881,113262,1,,
+882,112275,1,,
+883,112077,1,,
+884,113322,1,,
+885,507359,1,,
+886,112453,1,,
+887,112306,1,,
+888,123102,2,,
+889,123102,2,,
+890,112388,1,,
+891,112246,1,,
+892,114012,1,,
+893,112747,1,,
+894,805960,1,,
+895,112514,1,,
+896,267175,1,,
+897,112497,1,,
+898,113332,1,,
+899,113331,1,,
+900,113045,1,,
+901,112597,1,,
+902,113002,1,,
+903,112907,1,,
+904,112684,1,,
+905,112599,1,,
+906,123646,1,,
+907,123616,1,,
+908,112777,1,,
+909,457532,2,,
+910,457532,2,,
+911,181990,1,,
+912,112694,1,,
+913,116637,1,,
+914,113434,1,,
+915,113341,1,,
+916,113128,1,,
+917,112927,1,,
+918,112941,1,,
+919,112829,1,,
+920,112796,1,,
+921,261724,1,,
+922,134666,1,,
+923,112964,1,,
+924,113124,1,,
+925,113450,1,,
+926,180320,1,,
+927,113207,1,,
+928,162521,1,,
+929,112919,1,,
+930,113634,1,,
+931,114221,1,,
+932,113299,1,,
+933,113472,1,,
+934,113727,1,,
+935,113439,1,,
+936,113280,1,,
+937,114631,1,,
+938,113267,1,,
+939,113171,1,,
+940,113672,1,,
+941,113480,1,,
+942,113685,1,,
+943,113735,1,,
+944,115235,1,,
+945,113400,1,,
+946,113585,1,,
+947,113499,1,,
+948,113486,1,,
+949,114754,1,,
+950,117558,1,,
+951,113600,2,,
+952,113600,2,,
+953,114033,1,,
+954,113477,1,,
+955,117553,1,,
+956,113804,1,,
+957,113690,1,,
+958,385976,1,,
+959,526859,1,,
+960,705713,2,,
+961,705713,2,,
+962,117192,1,,
+963,114041,1,,
+964,114977,1,,
+965,114096,1,,
+966,113835,1,,
+967,114027,1,,
+968,113921,1,,
+969,115562,1,,
+970,286423,1,,
+971,114036,1,,
+972,113999,1,,
+973,114131,1,,
+974,114496,1,,
+975,114677,1,,
+976,114508,1,,
+977,114449,1,,
+978,114266,1,,
+979,114194,1,,
+980,114313,1,,
+981,114839,1,,
+982,127586,1,,
+983,115103,1,,
+984,114602,1,Unknown,Unknown
+985,114578,1,,
+986,114667,1,,
+987,117603,1,,
+988,115174,1,,
+989,115031,1,,
+990,114493,1,,
+991,114624,30,,
+992,114624,30,,
+993,114624,30,,
+994,114624,30,,
+995,114624,30,,
+996,114624,30,,
+997,114624,30,,
+998,114624,30,,
+999,114624,30,,
