@@ -18,20 +18,15 @@ attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap
 	accessToken: API_KEY
 });
 
-// Create a base layer that holds both maps.
-let baseMaps = {
-  "Streets": streets
-};
-
 // Then we add our 'graymap' tile layer to the map.
 streets.addTo(map);
 
 // Accessing the airport GeoJSON URL
-let incidentData = "Resources/incidents.json";
+let incidentData = dataset 
+
+console.log("working");
 
 // Grabbing our GeoJSON data.
-d3.json(incidentData).then(function(data) {
-  console.log(data);
-// Creating a GeoJSON layer with the retrieved data.
-L.geoJson(data).addTo(map);
+incidentData.forEach(function(feature) {
+	console.log(feature.geometry)
 });
