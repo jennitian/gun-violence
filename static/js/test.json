@@ -1,6 +1,7 @@
 {"type":"FeatureCollection", 
         "features": [
           {
+            "type": "Feature",
             "geometry": {
               "coordinates": [
                 40.3467,
@@ -12,10 +13,11 @@
               "date": "2013-01-01 00:00:00",
               "n_killed": 0,
               "notes": "Julian Sims under investigation: Four Shot and Injured"
-            },
-            "type": "Feature"
+            }
+            
           },
           {
+            "type": "Feature",
             "geometry": {
               "coordinates": [
                 33.909,
@@ -27,135 +29,7 @@
               "date": "2013-01-01 00:00:00",
               "n_killed": 1,
               "notes": "Four Shot; One Killed; Unidentified shooter in getaway car"
-            },
-            "type": "Feature"
-          },
-          {
-            "geometry": {
-              "coordinates": [
-                36.114,
-                -79.9569
-              ],
-              "type": "Point"
-            },
-            "properties": {
-              "date": "2013-01-07 00:00:00",
-              "n_killed": 2,
-              "notes": "Two firearms recovered. (Attempted) murder suicide - both succeeded in fulfilling an M/S and did not succeed, based on details."
-            },
-            "type": "Feature"
-          },
-          {
-            "geometry": {
-              "coordinates": [
-                29.9435,
-                -90.0836
-              ],
-              "type": "Point"
-            },
-            "properties": {
-              "date": "2013-01-21 00:00:00",
-              "n_killed": 0,
-              "notes": "Unprovoked drive-by results in multiple teens and young adults injured. No source with names or exact ages."
-            },
-            "type": "Feature"
-          },
-          {
-            "geometry": {
-              "coordinates": [
-                37.9656,
-                -121.718
-              ],
-              "type": "Point"
-            },
-            "properties": {
-              "date": "2013-01-21 00:00:00",
-              "n_killed": 0,
-              "notes": "Perps were likely motivated by gang affliations"
-            },
-            "type": "Feature"
-          },
-          {
-            "geometry": {
-              "coordinates": [
-                39.2899,
-                -76.6412
-              ],
-              "type": "Point"
-            },
-            "properties": {
-              "date": "2013-01-23 00:00:00",
-              "n_killed": 1,
-              "notes": "Shooting occurred over illegal dice game; victim was killed as he sat on a stoop. Victim was not a participant in the game."
-            },
-            "type": "Feature"
-          },
-          {
-            "geometry": {
-              "coordinates": [
-                35.0221,
-                -85.2697
-              ],
-              "type": "Point"
-            },
-            "properties": {
-              "date": "2013-01-23 00:00:00",
-              "n_killed": 1,
-              "notes": "19 yr. old male dies; 3 inured; shooting on Dodds Ave.;\r\r\n35.022083, -85.269986"
-            },
-            "type": "Feature"
-          },
-          {
-            "geometry": {
-              "coordinates": [
-                38.7067,
-                -90.2494
-              ],
-              "type": "Point"
-            },
-            "properties": {
-              "date": "2013-01-25 00:00:00",
-              "n_killed": 1,
-              "notes": "38.706732, -90.249375"
-            },
-            "type": "Feature"
-          },
-          {
-            "geometry": {
-              "coordinates": [
-                29.8816,
-                -91.5251
-              ],
-              "type": "Point"
-            },
-            "properties": {
-              "date": "2013-01-26 00:00:00",
-              "n_killed": 2,
-              "notes": "Ofc. hailed from Chitimacha Tribe of Louisiana Native American reservation; deputies hailed from St. Mary Parish sheriff's office. Lyons shot before arson."
-            },
-            "type": "Feature"
-          },
-          {
-            "geometry": {
-              "coordinates": [
-                38.8978,
-                -76.9717
-              ],
-              "type": "Point"
-            },
-            "properties": {
-              "date": "2013-01-26 00:00:00",
-              "n_killed": 0,
-              "notes": "Media accounts conflict as to gender of victims - there were either 2 women, 3 men wounded OR 1 woman, 4 men."
-            },
-            "type": "Feature"
-          },
-          {
-            "geometry": {
-              "coordinates": [
-                39.1236,
-                -121.583
-              ],
-              "type": "Point"
             }
-    }]}
+            
+          }
+        ]}
