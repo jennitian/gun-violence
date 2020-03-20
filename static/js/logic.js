@@ -22,16 +22,15 @@ attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap
 streets.addTo(map);
 
 // Accessing the airport GeoJSON URL
-let incidentData = "https://raw.githubusercontent.com/jennitian/gun-violence/jenn/Resources/incidents.json"
+let incidentData = "https://raw.githubusercontent.com/jennitian/gun-violence/jenn/static/js/test.json"
 
 // Grabbing our GeoJSON data.
 // Grabbing our GeoJSON data.
 d3.json(incidentData).then(function(data) {
   console.log(data);
-  let coordinates = data.lat_lng;
-  Object.keys(coordinates).forEach(function (key){
-    let object = coordinates[key]
-    L.geoJson(object)
+  let retrieve = data.features
+	retrieve.forEach ((object) => {
+		L.geoJson(retrieve)
     .addTo(map);});
 
 
