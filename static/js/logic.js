@@ -30,10 +30,11 @@ d3.json(incidentData).then(function(data) {
   console.log(data);
   L.geoJson(data, {
 	  color: "#ffffa1",
-	  weight: 2})
-    .addTo(map);
-
-
-// Creating a GeoJSON layer with the retrieved data.
+	  weight: 2,
+	  onEachFeature: function(feature, layer) {
+		  layer.bindPopup("<h3> Number Killed: " + feature.properties.n_killed + "</h3> <hr><h3> Date: "
+		  + feature.properties.date + "</h3><hr><h3> Notes: "+ feature.properties.notes + "</h3>")
+	  }
+  }).addTo(map);
 
 });
