@@ -22,7 +22,7 @@ attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap
 streets.addTo(map);
 
 // Accessing the airport GeoJSON URL
-let incidentData = "https://raw.githubusercontent.com/jennitian/gun-violence/jenn/static/js/geojson.json"
+let incidentData = "https://raw.githubusercontent.com/jennitian/gun-violence/jenn/static/js/incident.json"
 
 // Grabbing our GeoJSON data.
 // Grabbing our GeoJSON data.
