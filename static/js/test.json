@@ -1,0 +1,81 @@
+{"type":"FeatureCollection", 
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            40.3467,
+            -79.8559
+          ]
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2013-01-01 00:00:00",
+        "n_killed": 0,
+        "notes": "Julian Sims under investigation: Four Shot and Injured"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            33.909,
+            -118.333
+          ]
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2013-01-01 00:00:00",
+        "n_killed": 1,
+        "notes": "Four Shot; One Killed; Unidentified shooter in getaway car"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            36.114,
+            -79.9569
+          ]
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2013-01-07 00:00:00",
+        "n_killed": 2,
+        "notes": "Two firearms recovered. (Attempted) murder suicide - both succeeded in fulfilling an M/S and did not succeed, based on details."
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            29.9435,
+            -90.0836
+          ]
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2013-01-21 00:00:00",
+        "n_killed": 0,
+        "notes": "Unprovoked drive-by results in multiple teens and young adults injured. No source with names or exact ages."
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            37.9656,
+            -121.718
+          ]
+        ],
+        "type": "Point"
+      }
+    }]}
