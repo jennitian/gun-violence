@@ -1,0 +1,34 @@
+{"type":"FeatureCollection", 
+    "features": [
+        {
+          "geometry": {
+            "coordinates": [
+              -79.8559,
+              40.3467
+            ],
+            "type": "Point"
+          },
+          "properties": {
+            "date": "2013-01-01 00:00:00",
+            "n_killed": 0,
+            "notes": "Julian Sims under investigation: Four Shot and Injured"
+          },
+          "type": "Feature"
+        },
+        {
+          "geometry": {
+            "coordinates": [
+              -118.333,
+              33.909
+            ],
+            "type": "Point"
+          },
+          "properties": {
+            "date": "2013-01-01 00:00:00",
+            "n_killed": 1,
+            "notes": "Four Shot; One Killed; Unidentified shooter in getaway car"
+          },
+          "type": "Feature"
+        }
+]}
+
