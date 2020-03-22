@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[2]:
 
 
 get_ipython().run_line_magic('matplotlib', 'inline')
@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 
 
-# In[2]:
+# In[3]:
 
 
 host_address = 'bootcamp-final-project.c8u2worjd1ui.us-east-1.rds.amazonaws.com'
@@ -28,7 +28,7 @@ password = 'Puhj6k2%pbW'
 db = 'us_gun_violence'
 
 
-# In[3]:
+# In[4]:
 
 
 # A long string that contains the necessary Postgres login information
@@ -42,7 +42,7 @@ postgres_str = ('postgresql://{username}:{password}@{ipaddress}:{port}/{dbname}'
 engine = create_engine(postgres_str)
 
 
-# In[4]:
+# In[5]:
 
 
 suspects_df = pd.read_sql_query('''SELECT * FROM suspects;''', engine)
@@ -50,14 +50,14 @@ incidents_df = pd.read_sql_query('''SELECT * FROM incidents;''', engine)
 guns_df = pd.read_sql_query('''SELECT * FROM guns;''', engine)
 
 
-# In[5]:
+# In[6]:
 
 
 guns_df_dup = guns_df.drop_duplicates(subset='incident_id')
 guns_df_dup
 
 
-# In[6]:
+# In[7]:
 
 
 #male vs female
@@ -75,7 +75,7 @@ plt.show()
 fig_gender
 
 
-# In[7]:
+# In[25]:
 
 
 #shootings by politician/district/state
@@ -86,12 +86,13 @@ shootings = states.state.tolist()
 #graph
 fig_states = plt.bar(state[:10], shootings[:10], color='yellowgreen')
 plt.xticks(state[:10], rotation=45, ha='right')
+plt.ylabel('# of shootings')
 plt.title('Shootings by State')
 
 fig_states
 
 
-# In[8]:
+# In[9]:
 
 
 #shootings by politician/district
@@ -107,7 +108,7 @@ plt.title('Shootings by Senate District')
 fig_senate
 
 
-# In[9]:
+# In[10]:
 
 
 #shootings by politician/district
@@ -128,7 +129,7 @@ plt.title('Gun Types Used in Shootings')
 fig_guns
 
 
-# In[10]:
+# In[24]:
 
 
 age_groups = pd.DataFrame(suspects_df.participant_age_group.value_counts())
@@ -137,12 +138,14 @@ groups = age_groups.index
 number = age_groups.participant_age_group.tolist()
 
 fig_age_group = plt.bar(groups, number, color='firebrick')
+plt.ylabel('# of shootings')
+plt.title('Age Groups of Shooters')
 plt.xticks(groups)
 
 fig_age_group
 
 
-# In[11]:
+# In[19]:
 
 
 age = suspects_df.participant_age
@@ -151,16 +154,18 @@ incidents = suspects_df.participant_status
 fig_ages = plt.hist(age, bins=50, color='lightblue')
 plt.xlim(0,100)
 plt.xlabel('Age of Shooter')
+plt.ylabel('# of Shootings')
+plt.title('Age of Shooters')
 fig_ages
 
 
-# In[12]:
+# In[13]:
 
 
 guns_df.gun_stolen.value_counts()
 
 
-# In[13]:
+# In[14]:
 
 
 guns_df.gun_stolen.value_counts()
@@ -171,7 +176,7 @@ gun_owners_df = gun_ownership.merge(incidents_df, on= 'incident_id', how='left')
 gun_owners_df
 
 
-# In[14]:
+# In[15]:
 
 
 il_guns = gun_owners_df.loc[gun_owners_df['state'] == 'Illinois']
@@ -180,7 +185,7 @@ test = il_guns.gun_stolen.value_counts()
 test
 
 
-# In[15]:
+# In[16]:
 
 
 top_5 = ['Illinois', 'California', 'Florida', 'Texas', 'Ohio']
@@ -204,7 +209,7 @@ Ohio: [204, 41]
     
 
 
-# In[16]:
+# In[21]:
 
 
 width = 0.25 
@@ -213,11 +218,12 @@ fig_notstolen = plt.bar(top_5, not_stolen, width, color='#FFC222')
 
 plt.xticks(top_5)
 plt.xlabel('top 5 states with the most shootings')
-plt.ylabel('number of guns')
+plt.ylabel('# of guns')
+plt.title('Gun Ownership Analysis')
 plt.legend(['Stolen', 'Not Stolen'], loc='upper left')           
 
 
-# In[17]:
+# In[ ]:
 
 
 incidents_df
@@ -225,13 +231,13 @@ incidents_df
 new_df = incidents_df.dropna()
 
 
-# In[23]:
+# In[ ]:
 
 
 map_df = new_df[['date', 'latitude', 'longitude', 'n_killed', 'notes']]
 
 
-# In[22]:
+# In[ ]:
 
 
 map_df.to_csv('Resources/map.csv')
