@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# # Perform NLP on *notes*
+# 
+# - Extract 'notes' column
+# - Perform NLP to determine "hot"/"key" words
+# - Determine if there's any correlation between presence of key words and incident stats such as n_killed, suspect outcome, or gun type used
+
 # In[1]:
 
 
@@ -22,7 +28,7 @@ findspark.init()
 
 # start a spark session
 from pyspark.sql import SparkSession
-spark = SparkSession.builder.appName("BigDataHW").config("spark.driver.extraClassPath","content/postgresql-42.2.9.jar").getOrCreate()
+spark = SparkSession.builder.appName("NLP_Notes").config("spark.driver.extraClassPath","content/postgresql-42.2.9.jar").getOrCreate()
 
 
 # In[4]:
@@ -55,10 +61,10 @@ incidents_df = spark.read.jdbc(url=db_url, table='incidents', properties=db_prop
 
 
 # display dateframe
-incidents_df.show()
+incidents_df.limit(5).toPandas().head()
 
 
-# In[27]:
+# In[8]:
 
 
 # import functions
@@ -66,15 +72,15 @@ from pyspark.ml.feature import Tokenizer, StopWordsRemover, HashingTF, IDF, Stri
 from pyspark.sql.functions import length, col
 
 
-# In[31]:
+# In[10]:
 
 
 # drop unnecessary columns and null rows
 notes_df = incidents_df.drop('date', 'state', 'longitude', 'latitude', 'incident_characteristics', 'congressional_district',
-                             'state_house_district', 'state_senate_district').filter(notes_df['notes'].isNotNull())
+                             'state_house_district', 'state_senate_district').filter(incidents_df['notes'].isNotNull())
 
 
-# In[32]:
+# In[27]:
 
 
 # add columns for lengths of text
@@ -82,15 +88,24 @@ notes_length_df = notes_df.withColumn('notes_length', length(notes_df['notes']))
 notes_length_df.show()
 
 
-# In[60]:
+# ### Predicting *n_killed*
+
+# In[28]:
 
 
-# rename label column
+# rename label column 
 notes_length_df = notes_length_df.withColumnRenamed('n_killed', 'label')
 notes_length_df.printSchema()
 
 
-# In[61]:
+# In[13]:
+
+
+# show dataframe summary
+notes_length_df.describe().show()
+
+
+# In[14]:
 
 
 # create features
@@ -100,7 +115,7 @@ hashingTF = HashingTF(inputCol="token_notes", outputCol='hash_token')
 idf = IDF(inputCol='hash_token', outputCol='idf_token')
 
 
-# In[62]:
+# In[15]:
 
 
 # Create feature vectors
@@ -109,7 +124,7 @@ from pyspark.ml.linalg import Vector
 clean_up = VectorAssembler(inputCols=['idf_token', 'notes_length'], outputCol='features')
 
 
-# In[63]:
+# In[16]:
 
 
 # Create and run a data processing Pipeline
@@ -117,7 +132,7 @@ from pyspark.ml import Pipeline
 data_prep_pipeline = Pipeline(stages=[tokenizer, stopremove, hashingTF, idf, clean_up])
 
 
-# In[64]:
+# In[17]:
 
 
 # Fit and transform the pipeline
@@ -125,30 +140,36 @@ cleaner = data_prep_pipeline.fit(notes_length_df)
 cleaned = cleaner.transform(notes_length_df)
 
 
-# In[65]:
+# In[18]:
 
 
 # Show label and resulting features
 cleaned.select(['label', 'features']).show()
 
 
-# In[66]:
+# In[19]:
 
 
 # Break data down into a training set and a testing set
 training, testing = cleaned.randomSplit([0.7, 0.3])
 
 
-# In[67]:
+# In[21]:
 
 
 from pyspark.ml.classification import NaiveBayes
 # Create a Naive Bayes model and fit training data
 nb = NaiveBayes()
+
+
+# In[23]:
+
+
+# make predictions
 predictor = nb.fit(training)
 
 
-# In[69]:
+# In[24]:
 
 
 # Transform the model with testing data
@@ -156,7 +177,7 @@ test_results = predictor.transform(testing)
 test_results.limit(5).toPandas().head()
 
 
-# In[70]:
+# In[25]:
 
 
 # Use the Class Evalueator for a cleaner description
@@ -164,7 +185,101 @@ from pyspark.ml.evaluation import MulticlassClassificationEvaluator
 
 acc_eval = MulticlassClassificationEvaluator()
 acc = acc_eval.evaluate(test_results)
-print("Accuracy of model at predicting reviews was: %f" % acc)
+print("Accuracy of model at predicting n_killed was: %f" % acc)
+
+
+# ### Predict n_injured
+
+# In[30]:
+
+
+# drop previous label and rename n_injured column 
+notes_length_df = notes_length_df.drop('label').withColumnRenamed('n_injured', 'label')
+notes_length_df.printSchema()
+
+
+# In[31]:
+
+
+# show dataframe summary
+notes_length_df.describe().show()
+
+
+# In[32]:
+
+
+# create features
+tokenizer = Tokenizer(inputCol="notes", outputCol="token_notes")
+stopremove = StopWordsRemover(inputCol='token_notes',outputCol='stop_tokens')
+hashingTF = HashingTF(inputCol="token_notes", outputCol='hash_token')
+idf = IDF(inputCol='hash_token', outputCol='idf_token')
+
+
+# In[33]:
+
+
+# Create feature vectors
+clean_up = VectorAssembler(inputCols=['idf_token', 'notes_length'], outputCol='features')
+
+
+# In[34]:
+
+
+# Create and run a data processing Pipeline
+data_prep_pipeline = Pipeline(stages=[tokenizer, stopremove, hashingTF, idf, clean_up])
+
+
+# In[35]:
+
+
+# Fit and transform the pipeline
+cleaner = data_prep_pipeline.fit(notes_length_df)
+cleaned = cleaner.transform(notes_length_df)
+
+
+# In[36]:
+
+
+# Show label and resulting features
+cleaned.select(['label', 'features']).show()
+
+
+# In[37]:
+
+
+# Break data down into a training set and a testing set
+training, testing = cleaned.randomSplit([0.7, 0.3])
+
+
+# In[39]:
+
+
+# create new Naive Bayes model
+nb = NaiveBayes()
+
+
+# In[40]:
+
+
+# fit the model with training data
+predictor = nb.fit(training)
+
+
+# In[41]:
+
+
+# Transform the model with testing data
+test_results = predictor.transform(testing)
+test_results.limit(5).toPandas().head()
+
+
+# In[42]:
+
+
+# evaluate model performance
+acc_eval = MulticlassClassificationEvaluator()
+acc = acc_eval.evaluate(test_results)
+print("Accuracy of model at predicting n_injured was: %f" % acc)
 
 
 # In[ ]:
