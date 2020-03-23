@@ -13,6 +13,9 @@ gun-violence.csv
 config.py
 config.js
 
+# Spark Jar Packages
+*.jar
+
 # Jupyter Notebooks
 *.ipynb
 
