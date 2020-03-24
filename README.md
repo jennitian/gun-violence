@@ -2,6 +2,7 @@
 
 ## Overview
 This project utilized a dataset of gun violence incidents in the US from 2013-2018. The data was compiled by a Kaggle user and collected from the Gun Violence Archive (GVA), a non-profit corporation formed in 2013 to provide free online public access to accurate information about gun-related violence in the US. Using this data, the following questions were posed:
+
 #### Framing Questions
 1. Visualization-based:   
 	- What is the distribution of shootings by political district?
@@ -37,6 +38,8 @@ Data Presentation:
 #### Data Exploration
 Started by importing dataset from Kaggle website into a Pandas DataFrame in Jupyter Notebook. From there, relevant columns were selected and their datatypes converted to reflect their content (*eg. 'date' column was converted to `datetime`*). Next, three distinct DataFrames were created from the original import; one for all incident-related columns, one for suspect-specific columns, and finally one for the guns used. The format of the original dataset had multiple data points within a single row for some columns (*eg. 'participant_status' column had entries such as `0::Injured||1::Injured||2::Injured||3::Injured`*). These columns were exploded within each DataFrame so that every row had only a single data point. Finally each of the three DataFrames was uploaded to an AWS PostgreSQL database. 
 
+![Database Diagram](ETL/database_diagram.png)
+
 *see `ETL/` for more detail*
 
 #### Visual Analysis
@@ -44,3 +47,14 @@ Started by importing dataset from Kaggle website into a Pandas DataFrame in Jupy
 
 #### Predictive Models
 All questions being posed for prediction are classification based. The gun acquisition problem required a binary classifier while the rest were multi-class classifiers. The non-NLP (Natural Language Processing) problems each explored the performance of 4 different algorithms; Logistic Regression, State Vector Machine (SVM), Random Forest Classifier, and a Deep Neural Network (DNN). The NLP problems used a Naive Bayes model which excels at text classification with the many different features (words). 
+
+Gun Acquisition Accuracy								 |	Suspect Outcome Accuracy
+:-------------------------------------------------------:|:-----------------------------:
+![](MachineLearning/results/GunAcquisition_Accuracy.png) | ![](MachineLearning/results/SuspectOutcome_Accuracy.png)
+
+
+Suspect Fatalities Accuracy								 	|	NLP Accuracy
+:----------------------------------------------------------:|:-----------------------------:
+![](MachineLearning/results/SuspectFatalities_Accuracy.png) | ![](MachineLearning/results/NLP_Accuracy.png)
+
+*see `Machine Learning/` for more detail*
