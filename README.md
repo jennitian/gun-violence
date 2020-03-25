@@ -53,6 +53,7 @@ Pandas and python were used to perform some preliminary analysis on the datafram
 
 #### Interactive Map
 The the top 50 entries ordered by the number of casualties were taken from the incidents dataframe and transformed into a geojson file in python. This was then exported to the Maps folder to create a geojson object. Javascript, html, and css were used to read the geojson object and create an interactive map on a local server. Circle marker size on the map corresponds to the number of casualties. The dataframe size was cut down for time and to reduce crowding on the map.
+![Map](Maps/images/satellite view.png)
 
 #### Predictive Models
 All questions being posed for prediction are classification based. The gun acquisition problem required a binary classifier while the rest were multi-class classifiers. The non-NLP (Natural Language Processing) problems each explored the performance of 4 different algorithms; Logistic Regression, State Vector Machine (SVM), Random Forest Classifier, and a Deep Neural Network (DNN). The NLP problems used a Naive Bayes model which excels at text classification with the many different features (words). 
