@@ -19,11 +19,14 @@ This project utilized a dataset of gun violence incidents in the US from 2013-20
 Software:
 - Anaconda 4.7.12
 - Python 3.7.4
-- Numpy 1.18.1
 - Pandas 1.0.0
+- Numpy 1.18.1
 - Matplotlib 3.1.3
+- Sqlalchemy 1.3.13
 - Sklearn 0.22.1
+- Imblearn 0.6.1
 - Tensorflow 2.0.0
+- Pyspark 2.4.5
 
 Data Source:
 - https://www.kaggle.com/jameslko/gun-violence-data
