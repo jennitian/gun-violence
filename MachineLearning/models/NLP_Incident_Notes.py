@@ -2,15 +2,11 @@
 # coding: utf-8
 
 # # Perform NLP on *notes*
-# 
-# - Extract 'notes' column
-# - Perform NLP to determine "hot"/"key" words
-# - Determine if there's any correlation between presence of key words and incident stats such as n_killed, suspect outcome, or gun type used
 
 # In[1]:
 
 
-# import dependencies
+# import Spark dependencies
 import findspark
 # import db password
 from config import db_password
@@ -67,12 +63,22 @@ incidents_df.limit(5).toPandas().head()
 # In[8]:
 
 
-# import functions
+# import NLP dependencies
+import numpy as np
 from pyspark.ml.feature import Tokenizer, StopWordsRemover, HashingTF, IDF, StringIndexer
 from pyspark.sql.functions import length, col
 
+from pyspark.ml.feature import VectorAssembler
+from pyspark.ml.linalg import Vector
+from pyspark.ml import Pipeline
 
-# In[10]:
+from pyspark.ml.classification import NaiveBayes
+from pyspark.ml.evaluation import MulticlassClassificationEvaluator
+from sklearn.metrics import confusion_matrix
+from imblearn.metrics import classification_report_imbalanced
+
+
+# In[9]:
 
 
 # drop unnecessary columns and null rows
@@ -80,7 +86,7 @@ notes_df = incidents_df.drop('date', 'state', 'longitude', 'latitude', 'incident
                              'state_house_district', 'state_senate_district').filter(incidents_df['notes'].isNotNull())
 
 
-# In[27]:
+# In[10]:
 
 
 # add columns for lengths of text
@@ -90,7 +96,7 @@ notes_length_df.show()
 
 # ### Predicting *n_killed*
 
-# In[28]:
+# In[11]:
 
 
 # rename label column 
@@ -98,14 +104,28 @@ notes_length_df = notes_length_df.withColumnRenamed('n_killed', 'label')
 notes_length_df.printSchema()
 
 
-# In[13]:
+# In[12]:
 
 
 # show dataframe summary
 notes_length_df.describe().show()
 
 
+# In[13]:
+
+
+# get spread of n_killed
+notes_length_df.groupBy('label').count().show()
+
+
 # In[14]:
+
+
+# filter rows where n_killed > 2
+notes_length_df = notes_length_df.filter(notes_length_df.label <= 2)
+
+
+# In[15]:
 
 
 # create features
@@ -115,24 +135,21 @@ hashingTF = HashingTF(inputCol="token_notes", outputCol='hash_token')
 idf = IDF(inputCol='hash_token', outputCol='idf_token')
 
 
-# In[15]:
-
-
-# Create feature vectors
-from pyspark.ml.feature import VectorAssembler
-from pyspark.ml.linalg import Vector
-clean_up = VectorAssembler(inputCols=['idf_token', 'notes_length'], outputCol='features')
-
-
 # In[16]:
 
 
-# Create and run a data processing Pipeline
-from pyspark.ml import Pipeline
-data_prep_pipeline = Pipeline(stages=[tokenizer, stopremove, hashingTF, idf, clean_up])
+# Create feature vectors
+clean_up = VectorAssembler(inputCols=['idf_token', 'notes_length'], outputCol='features')
 
 
 # In[17]:
+
+
+# Create and run a data processing Pipeline
+data_prep_pipeline = Pipeline(stages=[tokenizer, stopremove, hashingTF, idf, clean_up])
+
+
+# In[18]:
 
 
 # Fit and transform the pipeline
@@ -140,14 +157,14 @@ cleaner = data_prep_pipeline.fit(notes_length_df)
 cleaned = cleaner.transform(notes_length_df)
 
 
-# In[18]:
+# In[19]:
 
 
 # Show label and resulting features
 cleaned.select(['label', 'features']).show()
 
 
-# In[19]:
+# In[20]:
 
 
 # Break data down into a training set and a testing set
@@ -157,19 +174,18 @@ training, testing = cleaned.randomSplit([0.7, 0.3])
 # In[21]:
 
 
-from pyspark.ml.classification import NaiveBayes
-# Create a Naive Bayes model and fit training data
+# Create a Naive Bayes model
 nb = NaiveBayes()
 
 
-# In[23]:
+# In[22]:
 
 
-# make predictions
+# fit model with training data
 predictor = nb.fit(training)
 
 
-# In[24]:
+# In[23]:
 
 
 # Transform the model with testing data
@@ -177,20 +193,40 @@ test_results = predictor.transform(testing)
 test_results.limit(5).toPandas().head()
 
 
-# In[25]:
+# In[24]:
 
 
 # Use the Class Evalueator for a cleaner description
-from pyspark.ml.evaluation import MulticlassClassificationEvaluator
-
-acc_eval = MulticlassClassificationEvaluator()
+acc_eval = MulticlassClassificationEvaluator().setMetricName("accuracy")
 acc = acc_eval.evaluate(test_results)
 print("Accuracy of model at predicting n_killed was: %f" % acc)
 
 
-# ### Predict n_injured
+# In[25]:
 
-# In[30]:
+
+# store np arrays of labels & predictions for evaluation
+y_labels = np.array(testing.select('label').collect())
+y_pred = np.array(test_results.select('prediction').collect())
+
+
+# In[26]:
+
+
+# print confusion matrix
+print(confusion_matrix(y_labels, y_pred))
+
+
+# In[27]:
+
+
+# print classification report
+print(classification_report_imbalanced(y_labels, y_pred))
+
+
+# ### Predict *n_injured*
+
+# In[28]:
 
 
 # drop previous label and rename n_injured column 
@@ -198,11 +234,25 @@ notes_length_df = notes_length_df.drop('label').withColumnRenamed('n_injured', '
 notes_length_df.printSchema()
 
 
-# In[31]:
+# In[29]:
 
 
 # show dataframe summary
 notes_length_df.describe().show()
+
+
+# In[30]:
+
+
+# get spread of n_injured
+notes_length_df.groupBy('label').count().show()
+
+
+# In[31]:
+
+
+# filter rows where n_injured > 4
+notes_length_df = notes_length_df.filter(notes_length_df.label <= 2)
 
 
 # In[32]:
@@ -251,21 +301,21 @@ cleaned.select(['label', 'features']).show()
 training, testing = cleaned.randomSplit([0.7, 0.3])
 
 
-# In[39]:
+# In[38]:
 
 
 # create new Naive Bayes model
 nb = NaiveBayes()
 
 
-# In[40]:
+# In[39]:
 
 
 # fit the model with training data
 predictor = nb.fit(training)
 
 
-# In[41]:
+# In[40]:
 
 
 # Transform the model with testing data
@@ -273,13 +323,35 @@ test_results = predictor.transform(testing)
 test_results.limit(5).toPandas().head()
 
 
-# In[42]:
+# In[41]:
 
 
 # evaluate model performance
-acc_eval = MulticlassClassificationEvaluator()
+acc_eval = MulticlassClassificationEvaluator().setMetricName("accuracy")
 acc = acc_eval.evaluate(test_results)
 print("Accuracy of model at predicting n_injured was: %f" % acc)
+
+
+# In[42]:
+
+
+# store np arrays of labels & predictions for evaluation
+y_labels = np.array(testing.select('label').collect())
+y_pred = np.array(test_results.select('prediction').collect())
+
+
+# In[43]:
+
+
+# print confusion matrix
+print(confusion_matrix(y_labels, y_pred))
+
+
+# In[44]:
+
+
+# print classification report
+print(classification_report_imbalanced(y_labels, y_pred))
 
 
 # In[ ]:

@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# # Predicting stolen/not-stolen gun acquisition
+
 # In[1]:
 
 
@@ -63,14 +65,6 @@ incidents_df = pd.read_sql_table('incidents', engine)
 incidents_df.head()
 
 
-# # Predicting stolen/not-stolen gun acquisition
-# 
-# - Utilize a supervised learning method because dataset contains labels
-# - Start by implementing a logistic regression algorithm
-# - Explore a SVM algorithm
-# - Explore a Random Forest Classifier 
-# - Compare tradeoffs with each algorithm
-
 # ## Preprocess data
 
 # In[7]:
@@ -84,11 +78,11 @@ guns_df.info()
 
 
 # extract rows that contain information about stolen status
-guns_stolen_df = guns_df.loc[(guns_df['not_stolen'] == 1) | (guns_df['stolen'] == 1)]
+guns_stolen_df = guns_df.loc[(guns_df['not_stolen'] + guns_df['stolen']) == 1]
 guns_stolen_df.info()
 
 
-# In[26]:
+# In[9]:
 
 
 # merge stolen guns df with incidents
@@ -96,7 +90,74 @@ guns_incidents_df = guns_stolen_df.merge(incidents_df, how='left', on='incident_
 guns_incidents_df.head()
 
 
-# In[30]:
+# In[10]:
+
+
+# define encodings for states
+states_dict = {
+        'Alaska': 1,
+        'Alabama': 2,
+        'Arkansas': 3,
+        'Arizona': 4,
+        'California': 5,
+        'Colorado': 6,
+        'Connecticut': 7,
+        'District of Columbia': 8,
+        'Delaware': 9,
+        'Florida': 10,
+        'Georgia': 11,
+        'Hawaii': 12,
+        'Iowa': 13,
+        'Idaho': 14,
+        'Illinois': 15,
+        'Indiana': 16,
+        'Kansas': 17,
+        'Kentucky': 18,
+        'Louisiana': 19,
+        'Massachusetts': 20,
+        'Maryland': 21,
+        'Maine': 22,
+        'Michigan': 23,
+        'Minnesota': 24,
+        'Missouri': 25,
+        'Mississippi': 26,
+        'Montana': 27,
+        'North Carolina': 28,
+        'North Dakota': 29,
+        'Nebraska': 30,
+        'New Hampshire': 31,
+        'New Jersey': 32,
+        'New Mexico': 33,
+        'Nevada': 34,
+        'New York': 35,
+        'Ohio': 36,
+        'Oklahoma': 37,
+        'Oregon': 38,
+        'Pennsylvania': 39,
+        'Rhode Island': 40,
+        'South Carolina': 41,
+        'South Dakota': 42,
+        'Tennessee': 43,
+        'Texas': 44,
+        'Utah': 45,
+        'Virginia': 46,
+        'Vermont': 47,
+        'Washington': 48,
+        'Wisconsin': 49,
+        'West Virginia': 50,
+        'Wyoming': 51
+}
+
+
+# In[11]:
+
+
+# use states dictionary to encode dataframe
+guns_incidents_df['state_num'] = guns_incidents_df['state'].apply(lambda x: states_dict[x])
+guns_incidents_df.head(3)
+
+
+# In[12]:
 
 
 # drop unnecesary columns
@@ -106,7 +167,7 @@ guns_incidents_df = guns_incidents_df.dropna()
 guns_incidents_df.head()
 
 
-# In[31]:
+# In[13]:
 
 
 # calculate IGR
@@ -116,14 +177,21 @@ IQR = Q3 - Q1
 print(IQR)
 
 
-# In[35]:
+# In[14]:
 
 
 # explore district columns for potential outlier + to visualize value spread
 guns_incidents_df.boxplot(column=['congressional_district', 'state_house_district', 'state_senate_district'])
 
 
-# In[41]:
+# In[15]:
+
+
+# drop state_house_district, too large a spread, difficult to discern outliers
+guns_incidents_df = guns_incidents_df.drop(columns=['state_house_district'])
+
+
+# In[16]:
 
 
 # separate features and target
@@ -131,7 +199,7 @@ y = guns_incidents_df['stolen']
 X = guns_incidents_df.drop(columns=['stolen'])
 
 
-# In[42]:
+# In[17]:
 
 
 # split into training and testing datasets
@@ -139,7 +207,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1, strati
 Counter(y_train)
 
 
-# In[43]:
+# In[18]:
 
 
 # implement random oversampling
@@ -148,7 +216,7 @@ X_resampled, y_resampled = ros.fit_resample(X_train, y_train)
 Counter(y_resampled)
 
 
-# In[44]:
+# In[19]:
 
 
 # create scaler for disctric columns
@@ -159,7 +227,7 @@ scaler = StandardScaler()
 X_scaler = scaler.fit(X_resampled)
 
 
-# In[45]:
+# In[20]:
 
 
 # scale the data
@@ -169,7 +237,7 @@ X_test_scaled = X_scaler.transform(X_test)
 
 # ### Logistic Regression Algorithm
 
-# In[46]:
+# In[21]:
 
 
 # import logistic regression algorithm
@@ -179,35 +247,35 @@ classifier = LogisticRegression(solver='lbfgs',
                                 random_state=1)
 
 
-# In[47]:
+# In[22]:
 
 
 # fit model using training data
 classifier.fit(X_resampled_scaled, y_resampled)
 
 
-# In[48]:
+# In[23]:
 
 
 # make predictions
 y_pred = classifier.predict(X_test_scaled)
 
 
-# In[49]:
+# In[24]:
 
 
 # print confusion matrix
 print(confusion_matrix(y_test, y_pred))
 
 
-# In[50]:
+# In[25]:
 
 
 # print balanced accuracy score
 print(balanced_accuracy_score(y_test, y_pred))
 
 
-# In[51]:
+# In[26]:
 
 
 # print classification report
@@ -216,7 +284,7 @@ print(classification_report_imbalanced(y_test, y_pred))
 
 # ### SVM Algorithm
 
-# In[52]:
+# In[27]:
 
 
 # create linear SVM model
@@ -224,35 +292,35 @@ from sklearn.svm import SVC
 model = SVC(kernel='linear', random_state=1)
 
 
-# In[53]:
+# In[28]:
 
 
 # fit the data
 model.fit(X_resampled_scaled, y_resampled)
 
 
-# In[58]:
+# In[29]:
 
 
 # make predictions
 y_pred = model.predict(X_test_scaled)
 
 
-# In[59]:
+# In[30]:
 
 
 # print confusion matrix
 print(confusion_matrix(y_test, y_pred))
 
 
-# In[60]:
+# In[31]:
 
 
 # print balanced accuracy score
 print(balanced_accuracy_score(y_test, y_pred))
 
 
-# In[61]:
+# In[32]:
 
 
 # print classification report
@@ -261,7 +329,7 @@ print(classification_report_imbalanced(y_test, y_pred))
 
 # ### Random Forest Classifier
 
-# In[62]:
+# In[33]:
 
 
 # create random forest classifier
@@ -269,35 +337,35 @@ from sklearn.ensemble import RandomForestClassifier
 rf_model = RandomForestClassifier(n_estimators=200, random_state=1)
 
 
-# In[64]:
+# In[34]:
 
 
 # fit the model
 rf_model = rf_model.fit(X_resampled_scaled, y_resampled)
 
 
-# In[66]:
+# In[35]:
 
 
 # make predictions
 y_pred = rf_model.predict(X_test_scaled)
 
 
-# In[67]:
+# In[36]:
 
 
 # print confusion matrix
 print(confusion_matrix(y_test, y_pred))
 
 
-# In[68]:
+# In[37]:
 
 
 # print balanced accuracy score
 print(balanced_accuracy_score(y_test, y_pred))
 
 
-# In[69]:
+# In[38]:
 
 
 # print classification report
@@ -306,18 +374,18 @@ print(classification_report_imbalanced(y_test, y_pred))
 
 # ### Deep NN
 
-# In[70]:
+# In[39]:
 
 
 # set up model 
 import tensorflow as tf
 num_input_features = len(X_resampled.iloc[0])
-hidden_nodes_layer1 = 10
-hidden_nodes_layer2 = 6
+hidden_nodes_layer1 = 20
+hidden_nodes_layer2 = 5
 nn = tf.keras.models.Sequential()
 
 
-# In[71]:
+# In[40]:
 
 
 # build model
@@ -327,130 +395,47 @@ nn.add(tf.keras.layers.Dense(units=1, activation='sigmoid'))
 nn.summary()
 
 
-# In[72]:
+# In[41]:
 
 
 # compile the model
 nn.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
 
-# In[76]:
+# In[42]:
 
 
 # train model
-fit_nn = nn.fit(X_resampled_scaled, y_resampled.to_numpy(), epochs=100)
+fit_nn = nn.fit(X_train, y_train, epochs=100)
 
 
-# In[83]:
+# In[43]:
+
+
+# store predictions
+y_pred = nn.predict(X_test)
+
+
+# In[44]:
 
 
 # evaluate model
-model_loss, model_accuracy = nn.evaluate(X_test_scaled, y_test.to_numpy(), verbose=2)
+model_loss, model_accuracy = nn.evaluate(X_test, y_test, verbose=2)
 print(f'Loss: {model_loss}, Accuracy: {model_accuracy}')
 
 
-# ## Algorithm Comparison
-
-# # Predicting suspect outcome
-# 
-# - Again, have labeled dataset --> implement a supervised learning algorithm
-# - Have multimple outcomes, start with SVM algorithm 
-# - Explore Random Forest Classifier
-# - Explore Neural Network
-# - Compare tradeoffs & advantages/disadvantages of each algorithm
-
-# ## Preprocess Data
-
-# In[ ]:
+# In[45]:
 
 
-# import transformed suspects dataframe
-suspects_df = pd.read_sql_table('suspects_ml_transformed', engine)
-suspects_df.head()
+# print confusion matrix
+print(tf.math.confusion_matrix(y_test, y_pred))
 
 
-# In[ ]:
+# In[46]:
 
 
-# add incident data 
-suspects_incidents_df = suspects_df.merge(incidents_df, how='left', on='incident_id')
-suspects_incidents_df.info()
-
-
-# In[ ]:
-
-
-# group into 3 statuses, Arrested, Killed, Other
-suspects_incidents_df['status_Arrested'] = (suspects_incidents_df['status_Injured, Arrested'] +
-                                            suspects_incidents_df['status_Unharmed, Arrested'] +
-                                            suspects_incidents_df['status_Arrested'])
-suspects_incidents_df['status_Other'] = (suspects_incidents_df['status_Injured'] +
-                                        suspects_incidents_df['status_Unharmed'])
-suspects_incidents_df.head()
-
-
-# In[ ]:
-
-
-# drop unnecessary columns
-suspects_incidents_df = suspects_incidents_df.drop(columns=['index', 'Adult_18+', 'Child_0-11', 'Teen_12-17', 'status_Injured', 'status_Injured, Arrested',
-                                                            'status_Unharmed, Arrested', 'status_Unharmed', 'date', 'state', 'latitude', 'longitude', 
-                                                            'incident_characteristics', 'notes'])
-suspects_incidents_df.head()
-
-
-# In[ ]:
-
-
-# drop NA columns
-suspects_incidents_df = suspects_incidents_df.dropna()
-suspects_incidents_df.info()
-
-
-# In[ ]:
-
-
-# separate features and target
-y = suspects_incidents_df[['status_Arrested', 'status_Killed', 'status_Other']]
-X = suspects_incidents_df.drop(columns=['status_Arrested', 'status_Killed', 'status_Other'])
-
-
-# In[ ]:
-
-
-for i, col in enumerate(y.columns.tolist(), 1):
-    y.loc[:, col] *= i
-y = y.sum(axis=1)
-
-
-# In[ ]:
-
-
-# split into training and testing datasets
-X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1, stratify=y)
-Counter(y_train)
-
-
-# ### Random Forest Classifier
-
-# In[ ]:
-
-
-# define model
-rf_model = RandomForestClassifier(n_estimators=200, random_state=1)
-
-
-# In[ ]:
-
-
-rf_model.fit(X_train, y_train)
-
-
-# In[ ]:
-
-
-# get predictions
-y_pred = rf_model.predict(X_test)
+# print classification report
+print(classification_report_imbalanced(y_test, y_pred > 0.5))
 
 
 # In[ ]:
@@ -458,7 +443,3 @@ y_pred = rf_model.predict(X_test)
 
 
 
-
-# ### Neural Network
-
-# ## Algorithm Comparison

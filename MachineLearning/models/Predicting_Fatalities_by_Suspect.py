@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[26]:
+# # Predicting *n_killed* by Suspect Characteristics
+
+# In[1]:
 
 
 # import dependencies
@@ -63,17 +65,9 @@ incidents_df = pd.read_sql_table('incidents', engine)
 incidents_df.head()
 
 
-# # Predicting suspect outcome
-# 
-# - Again, have labeled dataset --> implement a supervised learning algorithm
-# - Have multimple outcomes, start with SVM algorithm 
-# - Explore Random Forest Classifier
-# - Explore Neural Network
-# - Compare tradeoffs & advantages/disadvantages of each algorithm
-
 # ## Preprocess Data
 
-# In[39]:
+# In[7]:
 
 
 # combine suspect and incident data 
@@ -81,7 +75,7 @@ suspects_incidents_df = suspects_df.merge(incidents_df, how='left', on='incident
 suspects_incidents_df.info()
 
 
-# In[40]:
+# In[8]:
 
 
 # group into 3 statuses, Arrested, Killed, Other
@@ -93,26 +87,7 @@ suspects_incidents_df['status_Other'] = (suspects_incidents_df['status_Injured']
 suspects_incidents_df.head()
 
 
-# In[41]:
-
-
-# define encoding meanings
-status_defs = {'status_Arrested': 0, 'status_Killed': 1, 'status_Other': 2, 'status_Unknown': 3}
-
-
-# In[42]:
-
-
-# consolidate labels into one encoded column
-suspects_incidents_df['status'] = [status_defs['status_Arrested'] if x == 1 
-                                   else status_defs['status_Killed'] if y == 1 
-                                   else status_defs['status_Other'] if z == 1 
-                                   else status_defs['status_Unknown'] for (x, y, z) 
-                                   in zip(suspects_incidents_df['status_Arrested'], suspects_incidents_df['status_Killed'], suspects_incidents_df['status_Other'])]
-suspects_incidents_df.head(3)
-
-
-# In[43]:
+# In[9]:
 
 
 # inspect age groups
@@ -121,39 +96,101 @@ print('Teen: \t', sorted(Counter(suspects_incidents_df['Teen_12-17']).items()))
 print('Adult: \t', sorted(Counter(suspects_incidents_df['Adult_18+']).items()))
 
 
-# In[44]:
+# In[10]:
 
 
 # drop child rows (only 578 entries)
 suspects_incidents_df = suspects_incidents_df[suspects_incidents_df['Child_0-11'] != 1]
 
 
-# In[45]:
+# In[11]:
+
+
+# define encodings for states
+states_dict = {
+        'Alaska': 1,
+        'Alabama': 2,
+        'Arkansas': 3,
+        'Arizona': 4,
+        'California': 5,
+        'Colorado': 6,
+        'Connecticut': 7,
+        'District of Columbia': 8,
+        'Delaware': 9,
+        'Florida': 10,
+        'Georgia': 11,
+        'Hawaii': 12,
+        'Iowa': 13,
+        'Idaho': 14,
+        'Illinois': 15,
+        'Indiana': 16,
+        'Kansas': 17,
+        'Kentucky': 18,
+        'Louisiana': 19,
+        'Massachusetts': 20,
+        'Maryland': 21,
+        'Maine': 22,
+        'Michigan': 23,
+        'Minnesota': 24,
+        'Missouri': 25,
+        'Mississippi': 26,
+        'Montana': 27,
+        'North Carolina': 28,
+        'North Dakota': 29,
+        'Nebraska': 30,
+        'New Hampshire': 31,
+        'New Jersey': 32,
+        'New Mexico': 33,
+        'Nevada': 34,
+        'New York': 35,
+        'Ohio': 36,
+        'Oklahoma': 37,
+        'Oregon': 38,
+        'Pennsylvania': 39,
+        'Rhode Island': 40,
+        'South Carolina': 41,
+        'South Dakota': 42,
+        'Tennessee': 43,
+        'Texas': 44,
+        'Utah': 45,
+        'Virginia': 46,
+        'Vermont': 47,
+        'Washington': 48,
+        'Wisconsin': 49,
+        'West Virginia': 50,
+        'Wyoming': 51
+}
+
+
+# In[12]:
+
+
+# use states dictionary to encode dataframe
+suspects_incidents_df['state_num'] = suspects_incidents_df['state'].apply(lambda x: states_dict[x])
+suspects_incidents_df.head(3)
+
+
+# In[13]:
 
 
 # drop unnecessary columns
 suspects_incidents_df = suspects_incidents_df.drop(columns=['incident_id', 'index', 'Adult_18+', 'Child_0-11', 'Teen_12-17', 'status_Injured', 
-                                                            'status_Injured, Arrested', 'status_Unharmed, Arrested', 'status_Unharmed', 
-                                                            'status_Arrested', 'status_Killed', 'status_Other', 'date', 
-                                                            'state', 'latitude', 'longitude', 'incident_characteristics', 'notes'])
+                                                            'status_Injured, Arrested', 'status_Unharmed, Arrested', 'status_Unharmed', 'date', 'state', 
+                                                            'latitude', 'longitude', 'n_injured', 'incident_characteristics', 'notes', 'congressional_district',
+                                                            'state_house_district', 'state_senate_district'])
 suspects_incidents_df.head()
 
 
-# In[46]:
-
-
-# inspect spread of targets
-suspects_incidents_df['status'].value_counts()
-
-
-# In[47]:
+# In[14]:
 
 
 # drop columns with unknown status
-suspects_incidents_df = suspects_incidents_df[suspects_incidents_df['status'] != status_defs['status_Unknown']]
+suspects_incidents_df = suspects_incidents_df[(suspects_incidents_df['status_Arrested'] + 
+                                             suspects_incidents_df['status_Killed'] + 
+                                             suspects_incidents_df['status_Other']) == 1]
 
 
-# In[48]:
+# In[15]:
 
 
 # drop NA columns
@@ -161,53 +198,66 @@ suspects_incidents_df = suspects_incidents_df.dropna()
 suspects_incidents_df.info()
 
 
-# In[49]:
+# In[16]:
 
 
-# calculate IGR
-Q1 = suspects_incidents_df.quantile(0.25)
-Q3 = suspects_incidents_df.quantile(0.75)
-IQR = Q3 - Q1
-print(IQR)
+# describe dataframe
+suspects_incidents_df.describe()
 
 
-# In[50]:
+# In[17]:
 
 
-suspects_incidents_df['participant_age'].describe()
+# inspect age column
+suspects_incidents_df.boxplot(column=['participant_age'])
 
 
-# In[51]:
+# In[18]:
 
 
 # remove outlier ages
 suspects_incidents_df = suspects_incidents_df[(suspects_incidents_df['participant_age'] < 100.0) & (suspects_incidents_df['participant_age'] > 11.0)]
 
 
-# In[121]:
+# In[19]:
+
+
+# inspect n_killed column
+suspects_incidents_df.boxplot(column=['n_killed'])
+
+
+# In[20]:
+
+
+# get numerical count of values
+suspects_incidents_df['n_killed'].value_counts()
+
+
+# In[21]:
+
+
+# remove outlier values (> 2 killed)
+suspects_incidents_df = suspects_incidents_df[suspects_incidents_df['n_killed'] <= 2]
+suspects_incidents_df.describe()
+
+
+# In[22]:
 
 
 # separate features and target
-y = suspects_incidents_df['status']
-X = suspects_incidents_df.drop(columns=['status'])
+y = suspects_incidents_df['n_killed']
+X = suspects_incidents_df.drop(columns=['n_killed'])
 
 
-# In[122]:
-
-
-# plot target data
-suspects_incidents_df.plot.scatter(x='female', y='participant_age', c='status', colormap='cool', figsize=(10,6))
-
-
-# In[123]:
+# In[23]:
 
 
 # split into training and testing datasets
-X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1, stratify=y)
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
 Counter(y_train)
 
 
-# In[124]:
+# In[24]:
 
 
 # implement random oversampling
@@ -216,10 +266,10 @@ X_resampled, y_resampled = ros.fit_resample(X_train, y_train)
 Counter(y_resampled)
 
 
-# In[125]:
+# In[25]:
 
 
-# create scaler for disctric columns
+# create scaler for age and state columns
 from sklearn.preprocessing import StandardScaler
 scaler = StandardScaler()
 
@@ -227,17 +277,17 @@ scaler = StandardScaler()
 X_scaler = scaler.fit(X_resampled)
 
 
-# In[126]:
+# In[26]:
 
 
 # scale the data
-X_resampled_scaled = X_scaler.transform(X_resampled)
+X_train_scaled = X_scaler.transform(X_resampled)
 X_test_scaled = X_scaler.transform(X_test)
 
 
 # ### Multinomial Logistic Regression Algorithm
 
-# In[70]:
+# In[27]:
 
 
 # import logistic regression algorithm
@@ -245,35 +295,35 @@ from sklearn.linear_model import LogisticRegression
 classifier = LogisticRegression(multi_class='multinomial', solver='newton-cg', max_iter=200, random_state=1)
 
 
-# In[75]:
+# In[28]:
 
 
 # fit model using training data
-classifier.fit(X_resampled_scaled, y_resampled)
+classifier.fit(X_train_scaled, y_resampled)
 
 
-# In[76]:
+# In[29]:
 
 
 # make predictions
 y_pred = classifier.predict(X_test_scaled)
 
 
-# In[77]:
+# In[30]:
 
 
 # print confusion matrix
 print(confusion_matrix(y_test, y_pred))
 
 
-# In[78]:
+# In[31]:
 
 
 # print balanced accuracy score
 print(balanced_accuracy_score(y_test, y_pred))
 
 
-# In[79]:
+# In[32]:
 
 
 # print classification report
@@ -282,7 +332,7 @@ print(classification_report_imbalanced(y_test, y_pred))
 
 # ### LinearSVC Model
 
-# In[82]:
+# In[33]:
 
 
 # create linear SVM model
@@ -290,35 +340,35 @@ from sklearn.svm import LinearSVC
 model = LinearSVC(random_state=1)
 
 
-# In[83]:
+# In[34]:
 
 
 # fit the data
-model.fit(X_resampled_scaled, y_resampled)
+model.fit(X_train_scaled, y_resampled)
 
 
-# In[84]:
+# In[35]:
 
 
 # make predictions
 y_pred = model.predict(X_test_scaled)
 
 
-# In[85]:
+# In[36]:
 
 
 # print confusion matrix
 print(confusion_matrix(y_test, y_pred))
 
 
-# In[86]:
+# In[37]:
 
 
 # print balanced accuracy score
 print(balanced_accuracy_score(y_test, y_pred))
 
 
-# In[87]:
+# In[38]:
 
 
 # print classification report
@@ -327,7 +377,7 @@ print(classification_report_imbalanced(y_test, y_pred))
 
 # ### Random Forest Classifier
 
-# In[88]:
+# In[39]:
 
 
 # define model
@@ -335,34 +385,35 @@ from sklearn.ensemble import RandomForestClassifier
 rf_model = RandomForestClassifier(n_estimators=200, random_state=1)
 
 
-# In[94]:
+# In[40]:
 
 
-rf_model.fit(X_resampled, y_resampled)
+# fit model with resampled, scaled training data
+rf_model.fit(X_train_scaled, y_resampled)
 
 
-# In[95]:
+# In[41]:
 
 
 # get predictions
-y_pred = rf_model.predict(X_test)
+y_pred = rf_model.predict(X_test_scaled)
 
 
-# In[96]:
+# In[42]:
 
 
 # print confusion matrix
 print(confusion_matrix(y_test, y_pred))
 
 
-# In[97]:
+# In[43]:
 
 
 # print balanced accuracy score
 print(accuracy_score(y_test, y_pred))
 
 
-# In[98]:
+# In[44]:
 
 
 # print classification report
@@ -371,47 +422,67 @@ print(classification_report_imbalanced(y_test, y_pred))
 
 # ### Deep NN
 
-# In[127]:
+# In[45]:
 
 
 # set up model 
 import tensorflow as tf
 num_input_features = len(X_train.iloc[0])
-hidden_nodes_layer1 = 14
-hidden_nodes_layer2 = 6
+hidden_nodes_layer1 = 12
 nn = tf.keras.models.Sequential()
 
 
-# In[128]:
+# In[46]:
 
 
 # build model
 nn.add(tf.keras.layers.Dense(units=hidden_nodes_layer1, input_dim=num_input_features, activation='relu'))
-#nn.add(tf.keras.layers.Dense(units=hidden_nodes_layer2, activation='relu'))
 nn.add(tf.keras.layers.Dense(units=3, activation='softmax'))
 nn.summary()
 
 
-# In[129]:
+# In[47]:
 
 
 # compile the model
 nn.compile(loss='sparse_categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
 
-# In[133]:
+# In[48]:
 
 
 # train model
-fit_nn = nn.fit(X_train, y_train, epochs=100)
+fit_nn = nn.fit(X_train, y_train, epochs=50)
 
 
-# In[134]:
+# In[49]:
+
+
+# store predictions (extract indices with largest probability prediction)
+y_pred = nn.predict(X_test)
+y_pred = [np.argmax(x) for x in y_pred]
+
+
+# In[50]:
 
 
 # evaluate model
 model_loss, model_accuracy = nn.evaluate(X_test, y_test, verbose=2)
 print(f'Loss: {model_loss}, Accuracy: {model_accuracy}')
+
+
+# In[51]:
+
+
+# print confusion matrix
+print(confusion_matrix(y_test, y_pred))
+
+
+# In[52]:
+
+
+# print classification report
+print(classification_report_imbalanced(y_test, y_pred))
 
 
 # In[ ]:
