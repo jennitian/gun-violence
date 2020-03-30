@@ -15,6 +15,9 @@ config.py
 # Jupyter Notebooks
 *.ipynb
 
+# Assessments
+assessments/
+  
 # DS Store
 .DS_Store
 
