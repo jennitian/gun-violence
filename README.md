@@ -27,6 +27,7 @@ Software:
 - Imblearn 0.6.1
 - Tensorflow 2.0.0
 - Pyspark 2.4.5
+*see `Requirements.txt` for complete list*
 
 Data Source:
 - https://www.kaggle.com/jameslko/gun-violence-data
@@ -34,6 +35,7 @@ Data Source:
 Data Presentation:
 - **Google Doc**: https://docs.google.com/document/d/19m0oNe3mf9ttQIJ13VabIjzqJg0Vyj_xbIgDMrLssVY/edit?usp=sharing
 - **Google Slides**: https://docs.google.com/presentation/d/1nkW3fpefR0DPcBrYFjR-200SU31aRVqt7BEz9DwdAI0/edit?usp=sharing
+- **Presentation Notes**: https://docs.google.com/document/d/1PyUwVCS-hTZXH9TQlr-Ge9XSyQgzxefLwrRM2xq6ZGQ/edit?usp=sharing
 - **Dashboard**: *tbd*
 
 ## Summary
